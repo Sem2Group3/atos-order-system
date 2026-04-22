@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Core.Security;
+using Data;
 
 namespace Core.Auth;
 
 public class AuthService(
-    UserManager<IdentityUser> userManager,
-    SignInManager<IdentityUser> signInManager)
+    UserManager<ApplicationUser> userManager,
+    SignInManager<ApplicationUser> signInManager)
     : IAuthService
 {
     public async Task<SignInResult> LoginAsync(string email, string password, bool rememberMe)
@@ -14,10 +15,12 @@ public class AuthService(
             email, password, rememberMe, false);
     }
 
-    public async Task<IdentityResult> RegisterAsync(string email, string password)
+    public async Task<IdentityResult> RegisterAsync(string firstName, string lastName, string email, string password)
     {
-        var user = new IdentityUser
+        var user = new ApplicationUser
         {
+            FirstName = firstName,
+            LastName = lastName,
             UserName = email,
             Email = email,
         };

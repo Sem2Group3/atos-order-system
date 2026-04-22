@@ -6,7 +6,7 @@ namespace Web.Controllers;
 
 public class DashboardController : Controller
 {
-    [Authorize(Policy = Permissions.Dashboard.Read)]
+    [Authorize(Policy = Permissions.Dashboard.View)]
     public IActionResult Index()
     {
         return View();

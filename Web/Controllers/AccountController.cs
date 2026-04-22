@@ -1,5 +1,4 @@
 ﻿using Core.Auth;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Web.Models;
 
@@ -55,7 +54,11 @@ public class AccountController(IAuthService authService) : Controller
         if (!ModelState.IsValid)
             return View(model);
 
-        var result = await authService.RegisterAsync(model.Email, model.Password);
+        var result = await authService.RegisterAsync(
+            model.FirstName,
+            model.LastName,
+            model.Email,
+            model.Password);
 
         if (result.Succeeded)
             return RedirectToAction("Login");
