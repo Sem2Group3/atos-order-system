@@ -1,0 +1,278 @@
+﻿@page
+@model WebApplication_Atos.Pages.OrderBedrukteVlaggenVoorDuikverenigingAdFundumUitDrunenModel
+@{
+}
+<link rel="stylesheet" href="~/css/orderBedrukteVlaggenVoorDuikverenigingAdFundumUitDrunen.css?v=2">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTTlsqOihcptniZAoB9yIQzsuUkRXVwe9oQ&s" alt="Atos Logo">
+<body>
+    <div class="customer-data-container">
+        <form method="post">
+        <div class="form-grid">
+            <div class="form-row">
+                <label for="email">E-mail adres</label>
+                <div class="input-group">
+                    <input asp-for="Order.EmailAdres" type="email" id="email">
+                </div>
+                <label for="outstandingAmount" class="right-label">Contactpersoon</label>
+                <input asp-for="Order.Contactpersoon" type="text" id="contact person">
+                <button class="small-button">M</button>
+            </div>
+
+            <div class="form-row">
+                <label for="id">Order</label>
+                <input asp-for="Order.OrderId" type="text" id="orderID" readonly>
+                <label class="right-label">NaamVlag</label>
+                <input asp-for="Order.NaamVlag" type="text" id="contact person">
+                <button class="small-button">Sticker</button>
+            </div>
+
+            <div class="form-row">
+                <label for="prijsopgave">Prijsopgave</label>
+                <input asp-for="Order.PrijsopgaveId" type="text" id="id" readonly>
+                <label for="bevestiging" class="right-label">Bevestiging</label>
+                <select asp-for="Order.Bevestiging">
+                    @foreach(var option in Model.Bevestigingen)
+                    {
+                        <option value="@option.Bevestiging">@option.Bevestiging</option>
+                    }                  
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="prijsopgave">Herhaalorder</label>
+                <input asp-for ="Order.HerhaalOrderId" type="text" id="id" readonly>
+                <label for="bevestiging" class="right-label">Materiaal</label>
+                <select asp-for="Order.Materiaal">
+                    <option value="" selected hidden></option>
+                    @foreach (var option in Model.VlagMateriaal)
+                    {
+                        <option value="@option.Materiaal">@option.Materiaal</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="ordernummer">Ordernummer</label>
+                <button class="small-button">📁</button>
+                <input asp-for= "Order.Ordernummer" type="text" id="id">
+                <label for="betaling" class="right-label">Betaling</label>
+                <select asp-for="Order.Betaling">
+                    @foreach (var option in Model.Betaling)
+                    {
+                        <option value="@option.Betaling">@option.Betaling</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="orderdatum">Order datum</label>
+                <input asp-for="Order.Orderdatum" type="date" id="date">
+                <label>Leverancier</label>
+                    <select asp-for="Order.LeverancierId" class="multi-column-dropdown">
+                        @foreach (var option in Model.Leveranciers)
+                        {
+                            var naam = option.Naam?.PadRight(25);
+                            var adres = option.Adres?.PadRight(30);
+                            var plaats = option.Woonplaats;
+
+                            <option value="@option.LeverancierId">@naam | @adres | @plaats</option>
+                        }
+                    </select>
+                    
+            </div>
+                <div class="form-row">
+                    <label for="afleverdatum">Produktie klaar</label>
+                    <input asp-for="Order.ProduktieDatum" type="date" id="date">
+                    <label for="werknemer" class="right-label">Verpakking</label>
+                    <select asp-for="Order.Verpakking">
+                        <option value="" selected hidden></option>
+                        @foreach (var option in Model.VlagVerpakking)
+                        {
+                            <option value="@option.Verpakking">@option.Verpakking</option>
+                        }
+                    </select>
+                </div>
+            <div class="form-row">
+                <label for="afleverdatum">Aflever datum</label>
+                <input asp-for = "Order.Afleverdatum" type="date" id="date">
+                <label for="werknemer" class="right-label">Beeldmateriaal</label>
+                <select asp-for ="Order.Beeldmateriaal">
+                    <option value="" selected hidden></option>
+                    @foreach (var option in Model.Beeldmaterial)
+                    {
+                        <option value="@option.Beeldmateriaal">@option.Beeldmateriaal</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="orderdatum">Afwerking</label>
+                <select asp-for="Order.Afwerking">
+                    <option value="" selected hidden></option>
+                    @foreach (var option in Model.VlagAfwerking)
+                    {
+                        <option value="@option.Afwerking">@option.Afwerking</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="orderdatum">Referintie</label>
+                <select asp-for="Order.Bijzonderheden">
+                    <option value="" selected hidden></option>
+                    @foreach (var option in Model.ReferentieText)
+                    {
+                        <option value="@option.ReferentieText">@option.ReferentieText</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Notities inkoop:</label>
+                <textarea asp-for="Order.NotitiesInkoop" id="notes"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">extra info orderbon:</label>
+                <textarea asp-for="Order.Notities" id="notes"></textarea>
+            </div>
+
+
+            <div class="form-row">
+                <button class="small-button">Wijzig klant...</button>
+                    <label for="werknemer" class="right-label">🗓️verancier:</label>
+                    <select asp-for="Order.WerknemerId">
+                        @foreach (var option in Model.Employees)
+                        {
+                            <option value="@option.WerknemerId">@option.Werknemer</option>
+                        }
+                    </select>
+                <button class="small-button">📷</button>
+                <label for="betaling" class="right-label">Lokatie:</label>
+                <input asp-for="Order.LokatieVlag" type="text" id="contact person" readonly>
+                <button class="small-button">bt</button>
+            </div>
+
+            <div class="form-row">
+                <label for="orderdatum">Labels</label>
+                <select asp-for="Order.Label">
+                    <option value="Ja">Ja</option>
+                    <option value="Nee">Nee</option>
+                </select>
+                <label for="betaling" class="right-label">Levering:</label>
+                <select asp-for="Order.Levering">
+                    <option value="" selected hidden></option>
+                    @foreach (var option in Model.Levering)
+                    {
+                        <option value="@option.Levering">@option.Levering</option>
+                    }
+                </select>
+
+                <label for="betaling" class="right-label">Sticker:</label>
+                <select asp-for="Order.Sticker">
+                    <option value="" selected hidden></option>
+                    @foreach (var option in Model.Stickers)
+                    {
+                        <option value="@option.Sticker">@option.Sticker</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Regel:</label>
+                <input asp-for="OrderRule.OrderRegelId" type="text" id="id" readonly>
+                <label for="betaling" class="right-label">Kleuren:</label>
+                    <textarea asp-for="OrderRule.Kleuren" id="kleuren"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Formaat:</label>
+                <select asp-for="OrderRule.Formaat">
+                        <option value="@Model.OrderRule.Formaat" selected hidden>@Model.OrderRule.Formaat</option>
+                    @foreach (var option in Model.VlagFormaat)
+                    {
+                        <option value="@option.Formaat">@option.Formaat</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Type:</label>
+                <select asp-for="OrderRule.Type">
+                        <option value="@Model.OrderRule.Type" selected hidden>@Model.OrderRule.Type</option>
+                    @foreach (var option in Model.DrukTypes)
+                    {
+                        <option value="@option.Type">@option.Type</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="hoeveelheid">Hoeveelheid:</label>
+                <input asp-for="OrderRule.Hoeveelheid" type="text" id="hoeveelheid">
+                <label for="afbeelding" class="right-label">Afbeelding:</label>
+                <textarea asp-for="OrderRule.Afbeelding" id="afbeelding"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="prijs">Prijs:</label>
+                <input asp-for="Prijs" type="text" id="prijs">
+            </div>
+
+            <div class="form-row">
+                <label for="totaal">Totaal:</label>
+                <input type="text" id="totaal" disabled>
+            </div>
+
+            <div class="form-row">
+                <label for="btw">BTW%</label>
+                <input asp-for="BTW" type="text" id="btw">
+                <label for="extra" class="right-label">Extra levering:</label>
+                    <input asp-for="ExtraLeveringPrijs" type="text" id="extra">
+                <textarea asp-for="OrderRule.ExtraLevering" id="notes"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="totaalIncBtw">Totaal inc BTW:</label>
+                <input type="text" id="totaalIncBtw" disabled>
+            </div>
+
+
+            <div class="form-row">
+                <label for="notes">Inkoopprijs:</label>
+                    <input asp-for="Inkoopprijs" type="text" id="inkoopprijs">
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Marge:</label>
+                <input type="text" id="marge" value="0%" disabled>
+                <label for="betaling" class="right-label">Opmerking bevestiging:</label>
+                <textarea  asp-for="OrderRule.Notities" id="notes"></textarea>
+            </div>
+
+            <div class="flags">
+                <button class="flag-button active">Orderbevestiging mailen</button>
+                    <button type="button" class="flag-button active" onclick="openPakbonAndConfectiebon(@Model.Order.OrderId)">Order en pakbon</button>
+                    <button class="flag-button">Leverancier mailen</button>
+               
+            </div>
+
+            <div class="form-row">
+                <label for="orderdatum">Geprint</label>
+                <select asp-for="Order.Geprint">
+                        <option value="Nee">Nee</option>
+                        <option value="Ja">Ja</option>
+                </select>
+                <label for="betaling" class="right-label">Factuur:</label>
+                <select asp-for="Order.Gefactureerd">
+                        <option value="Nee">Nee</option>
+                        <option value="Jaa">Ja</option>
+                </select>
+            </div>
+                <div class="form-row">
+                    <button type="submit" class="flag-button active">Save</button>
+                </div>
+        </div>
+        </form>
+    </div>
+
+        <script src="~/js/OrderPrintedFlags.js?v=7"></script>
+</body>

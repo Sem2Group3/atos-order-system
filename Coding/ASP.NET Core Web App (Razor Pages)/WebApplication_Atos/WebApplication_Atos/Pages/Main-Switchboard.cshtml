@@ -1,0 +1,41 @@
+﻿@page
+@model WebApplication_Atos.Pages.Main_SwitchboardModel
+@{
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order System</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order System</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<header>
+    <h1>New Order System</h1>
+</header>
+<body>
+    <div class="container">
+        <p><a href="/CustomerPage" style="color: black">Klant</a></p>
+        <a href="/Onderhoud-Database" style="color: black"> Databaseonderhoud</a>
+        <p>Zoek factuur</p>
+        <p>Zoekvolgorde afgedrukte vlaggen</p>
+        <p>Blokkeer</p>
+        <br />
+        <form method="post" asp-page="/Logout" asp-page-handler="OnPost" class="logout-form-container">
+            <button type="submit" class="logout-button">
+                Uitloggen
+            </button>
+        </form>
+    </div>
+</body>
+</html>

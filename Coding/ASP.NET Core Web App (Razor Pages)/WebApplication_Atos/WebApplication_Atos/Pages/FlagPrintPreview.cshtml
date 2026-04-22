@@ -1,0 +1,98 @@
+﻿@page "{id:int}"
+@model WebApplication_Atos.Pages.FlagPrintPreviewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <title>Offerte - @Model.FlagQuote.PrijsopgaveId</title>
+    <link rel="stylesheet" href="~/css/flagprintpreview.css?v=1" />
+</head>
+<body onload="window.print()">
+
+    <div class="company-header">
+        <img src="~/img/header.png" class="header-image" alt="Kopafbeelding" />
+        <p class="date">@DateTime.Today.ToString("dddd dd MMMM yyyy", new System.Globalization.CultureInfo("nl-NL"))</p>
+    </div>
+
+    <h1>OFFERTE</h1>
+    <h2>BEDRUKTE VLAGGEN</h2>
+
+    <div class="contact-block">
+        <p><strong>@Model.CurrentClient.Naam</strong></p>
+        <p>@Model.CurrentClient.Adres</p>
+        <p>@Model.CurrentClient.Postcode</p>
+        <p><strong>T.a.v.:</strong> @Model.FlagQuote.ContactPersoon</p>
+        <p><strong>Tel:</strong> @Model.FlagQuote.EmailAdres</p>
+    </div>
+
+    <div class="intro">
+        <p>Beste heer/mevrouw,</p>
+        <p>Met dank voor uw aanvraag doe ik u hierbij een prijsopgave toekomen van vlaggen bedrukt volgens onderstaande specificatie:</p>
+    </div>
+
+    <table class="flag-table">
+        <thead>
+            <tr>
+                <th>Afmeting</th>
+                <th>Druk soort</th>
+                <th>Aantal</th>
+                <th>Kleuren</th>
+                <th>Stukprijs</th>
+                <th>Totaalprijs</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.FlagRules)
+            {
+                <tr>
+                    <td>@item.Formaat</td>
+                    <td>@item.Type</td>
+                    <td>@item.Hoeveelheid</td>
+                    <td>@item.Kleuren</td>
+                    <td>€ @item.Prijs.ToString("F2")</td>
+                    <td>€ @((item.Hoeveelheid * item.Prijs).ToString("F2"))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="summary">
+        <p><strong>Netto:</strong> € @Model.NettoTotaal.ToString("F2")</p>
+        <p><strong>B.T.W.:</strong> @Model.BTWPercentage.ToString("F2")% <strong>BTW bedrag:</strong> € @Model.BTWBedrag.ToString("F2")</p>
+        <p><strong>Totaal:</strong> € @Model.Totaal.ToString("F2")</p>
+        <p class="note">Prijzen exclusief B.T.W.</p>
+    </div>
+
+    <div class="details">
+        <p><strong>Materiaal:</strong> @Model.FlagQuote.Materiaal</p>
+        <p><strong>Afwerking:</strong> @Model.FlagQuote.Afwerking</p>
+        <p><strong>Verpakking:</strong> @Model.FlagQuote.Verpakking</p>
+        <p><strong>Levertijd:</strong> @Model.FlagQuote.Levertijd</p>
+        <p><strong>Referentie:</strong> @Model.FlagQuote.Bijzonderheden</p>
+    </div>
+
+    <div class="terms">
+        <p>De van toepassing zijnde leveringsvoorwaarden worden u op verzoek toegezonden.</p>
+        <p>Deze offerte is geldig tot 2 maanden na de offertedatum.</p>
+        <p>Aanleverspecificaties worden u op verzoek toegezonden.</p>
+        <p>Deze offerte is gebaseerd op bruikbaar beeldmateriaal door de klant aangeleverd (EPS/AI).</p>
+        <p>Genoemde prijzen zijn exclusief btw en verzendkosten (€ 9,75).</p>
+    </div>
+
+    <div class="closing">
+        <p>Indien u wenst over te gaan tot bestellen of nog vragen heeft, kunt u contact met ons opnemen.</p>
+        <p>Met vriendelijke groet,</p>
+        <p><strong>Nieuwenhuizen Vlaggen en Masten</strong></p>
+        <p>Directie</p>
+    </div>
+
+    <footer class="footer-contact">
+        <p>v.d. Duinstraat 82 - Sprang-Capelle Tel: +31 416-272498</p>
+        <p><a href="http://www.nieuwenhuizen.nl">www.nieuwenhuizen.nl</a> – info@nieuwenhuizen.nl – kvk: 18088894</p>
+    </footer>
+
+</body>
+</html>

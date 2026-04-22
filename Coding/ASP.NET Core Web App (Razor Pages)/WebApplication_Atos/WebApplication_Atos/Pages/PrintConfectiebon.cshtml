@@ -1,0 +1,113 @@
+﻿@page "{id:int}"
+@model WebApplication_Atos.Pages.PrintConfectiebonModel
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/printconfectiebon.css?v=7">
+<body class="confectiebon-page">
+    <img src="~/img/header.png" alt="Header" class="header-image" />
+
+    <h1>CONFECTIEBON - BEDRUKTE VLAGGEN</h1>
+
+    <div class="client-info">
+        <p><strong>Klant:</strong> @Model.Client.Naam</p>
+        <p><strong>T.a.v.:</strong> @Model.Client.Contactpersoon</p>
+        <p>@Model.Client.Adres</p>
+        <p>@Model.Client.Postcode @Model.Client.Woonplaats</p>
+        <p><strong>Tel:</strong> @Model.Client.Telefoon</p>
+    </div>
+
+    <div class="orderinfo-toprow">
+        <div class="info-block">
+            <div class="label">ORDER NO</div>
+            <div class="value">@Model.Order.Ordernummer</div>
+        </div>
+        <div class="info-block">
+            <div class="label">PLANNING CONFECTIE</div>
+            <div class="value">@Model.Order.ProduktieDatum?.ToString("dd-MMM-yy")</div>
+        </div>
+        <div class="info-block">
+            <div class="label">AFLEVER</div>
+            <div class="value">@Model.Order.Afleverdatum?.ToString("dd-MMM-yy")</div>
+        </div>
+    </div>
+
+    <div class="orderinfo-box">
+        <div class="orderinfo-header">ORDERINFO</div>
+        <div class="orderinfo-content">
+            <p><strong>Naam:</strong> @Model.Order.NaamVlag</p>
+            <p><strong>Afbeelding:</strong></p>
+            <p><strong>Materiaal:</strong> @Model.Order.Materiaal</p>
+            <p><strong>Kleuren:</strong> @Model.OrderRule.Kleuren</p>
+            <p><strong>Aantal:</strong> @Model.OrderRule.Hoeveelheid</p>
+            <p><strong>Afmeting:</strong> @Model.OrderRule.Formaat</p>
+        </div>
+    </div>
+
+
+    <div class="section-grid">
+
+        <div class="block">
+            <div class="block-header">ORDER STATUS</div>
+            <p><strong>ORDER LOO:</strong> @Model.Order.Orderdatum?.ToString("dd-MMM-yy")</p>
+        </div>
+
+        <div class="block double-block">
+            <div class="sub-block labels-part">
+                <div class="sub-header">LABELS</div>
+                <p>@Model.Order.Label</p>
+            </div>
+            <div class="sub-block confectie-part">
+                <div class="sub-header">CONFECTIE</div>
+                <p><strong>Naam:</strong> __________</p>
+                <p><strong>Datum:</strong> __________</p>
+                <p><input type="checkbox" /> geen confectie</p>
+                <p><strong>Aantal gemaakt:</strong> __________</p>
+            </div>
+        </div>
+
+
+        <div class="block">
+            <div class="block-header">CONFECTIE TEKENING</div>
+            <p>@Model.Order.Afwerking</p>
+        </div>
+
+        <div class="block">
+            <div class="block-header">STICKERS</div>
+            <p>@Model.Client.Naam</p>
+            <p>@Model.Order.NaamVlag</p>
+            <p>@Model.OrderRule.Formaat</p>
+        </div>
+
+        <div class="block">
+            <div class="block-header">GELEVERD</div>
+            <p><strong>Aantal:</strong> _______</p>
+        </div>
+
+        <div class="block">
+            <div class="block-header">VERPAKKING</div>
+            <p>Per stuk in folie verpakt met wasvoorschrift.</p>
+        </div>
+
+        <div class="block">
+            <div class="block-header">ORDER AFGEWERKT</div>
+            <p><input type="checkbox" /> <strong>Datum:</strong> _______</p>
+        </div>
+
+        <div class="block">
+            <div class="block-header">LEVERING</div>
+            <p><strong>GEBELD:</strong> __________</p>
+        </div>
+
+        <div class="block">
+            <div class="block-header">FAKTUUR</div>
+        </div>
+
+        <div class="block">
+            <div class="block-header">COMBINATIELEVERING</div>
+            <p><input type="checkbox" /> Let op: Deze levering combineren</p>
+        </div>
+
+    </div>
+
+</body>

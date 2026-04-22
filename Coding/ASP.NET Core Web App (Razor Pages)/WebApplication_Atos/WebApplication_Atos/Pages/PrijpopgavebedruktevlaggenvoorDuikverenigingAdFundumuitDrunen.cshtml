@@ -1,0 +1,170 @@
+﻿@page
+@model WebApplication_Atos.Pages.PrijpopgavebedruktevlaggenvoorDuikverenigingAdFundumuitDrunenModel
+@{
+}
+<link rel="stylesheet" href="~/css/prijpopgavebedruktevlaggenvoorDuikverenigingAdFundumuitDrunen.css">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTTlsqOihcptniZAoB9yIQzsuUkRXVwe9oQ&s" alt="Atos Logo">
+<body>
+    <form method="post" onsubmit="cleanCurrencyInputs()">
+    <div class="customer-data-container">
+        
+        <div class="form-grid">
+            <div class="form-row">
+                <label>E-mail adres:</label>
+                <input asp-for="FlagQuote.EmailAdres" type="email" id="email" value="@Model.CurrentClient.Email" readonly>
+            </div>
+            <div class="form-row">
+                <label>Contactpersoon:</label>
+                <input asp-for="FlagQuote.ContactPersoon" type="text" id="contact person" value="@Model.CurrentClient.Contactpersoon" readonly>
+            </div>
+            <div class="form-row">
+                <label>Prijsopgave</label>
+                <input asp-for="FlagQuote.PrijsopgaveId" type="text" readonly/>
+            </div>
+            <div class="form-row">
+                <label>Datum</label>
+                <input  asp-for="FlagQuote.DatumPrijsopgave" type="date" id="date" >
+            </div>
+            <div class="form-row">
+                <label>Afwerking</label>
+                <select asp-for="FlagQuote.Afwerking">
+                    @foreach (var option in Model.VlagAfwerking)
+                    {
+                        <option value="@option.Afwerking">@option.Afwerking</option>
+                    }
+                </select>
+
+            </div>
+
+            <div class="form-row">
+                <label>Levertijd</label>
+                <select asp-for="FlagQuote.Levertijd">
+                    @foreach (var option in Model.Levertijd)
+                    {
+                        <option value="@option.Levertijd">@option.Levertijd</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Afgehandeld door</label>
+                <select asp-for="FlagQuote.WerknemerId">
+                    @foreach (var option in Model.Employees)
+                    {
+                        <option value="@option.WerknemerId">@option.Werknemer</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Materiaal</label>
+                <select asp-for="FlagQuote.Materiaal">
+                    @foreach (var option in Model.VlagMateriaal)
+                    {
+                        <option value="@option.Materiaal">@option.Materiaal</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Verpakking</label>
+                <select asp-for="FlagQuote.Verpakking">
+                    @foreach (var option in Model.VlagVerpakking)
+                    {
+                        <option value="@option.Verpakking">@option.Verpakking</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Referentie</label>
+                <select asp-for="FlagQuote.Bijzonderheden">
+                    @foreach (var option in Model.ReferentieText)
+                    {
+                        <option value="@option.ReferentieText">@option.ReferentieText</option>
+                    }
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Notities</label>
+                    <input asp-for="FlagQuote.Notities" type="text" />
+            </div>
+        </div>
+    </div>
+        <table id="flagRulesTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Formaat</th>
+                    <th>Kleuren</th>
+                    <th>Aantal</th>
+                    <th>Prijs</th>
+                    <th>Totaal</th>
+                    <th>Inkoop</th>
+                    <th>Marge</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.FlagRules.Count; i++)
+                {
+                    <tr>
+                        <input name="FlagRules[@i].PrijsopgaveRegelId" value="@Model.FlagRules[i].PrijsopgaveRegelId" hidden/>
+                        <input name="FlagRules[@i].PrijsopgaveId" value="@Model.FlagQuote.PrijsopgaveId" hidden />
+                        <td><input name="FlagRules[@i].Type" value="@Model.FlagRules[i].Type" /></td>
+                        <td><input name="FlagRules[@i].Formaat" value="@Model.FlagRules[i].Formaat" /></td>
+                        <td><input name="FlagRules[@i].Kleuren" value="@Model.FlagRules[i].Kleuren" /></td>
+                        <td><input name="FlagRules[@i].Hoeveelheid" value="@Model.FlagRules[i].Hoeveelheid" /></td>
+                        <td><input class="prijs euro-input" name="FlagRules[@i].Prijs" value="@Model.FlagRules[i].Prijs" /></td>
+                        <td><input class="totaal" type="text" readonly /></td>
+                        <td><input class="inkoopprijs euro-input" name="FlagRules[@i].Inkoopprijs" value="@Model.FlagRules[i].Inkoopprijs" /></td>
+                        <td><input class="marge" type="text" readonly /></td>
+                    </tr>
+                }
+                <tr class="new-row">
+                    <input name="NewFlagRules[0].PrijsopgaveId" value="@Model.FlagQuote.PrijsopgaveId" hidden />
+                    <td><input name="NewFlagRules[0].Type" /></td>
+                    <td><input name="NewFlagRules[0].Formaat" /></td>
+                    <td><input name="NewFlagRules[0].Kleuren" /></td>
+                    <td><input name="NewFlagRules[0].Hoeveelheid" /></td>
+                    <td><input class="prijs euro-input" name="NewFlagRules[0].Prijs" /></td>
+                    <td><input class="totaal" type="text" readonly /></td>
+                    <td><input class="inkoopprijs euro-input" name="NewFlagRules[0].Inkoopprijs" /></td>
+                    <td><input class="marge" type="text" readonly /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="customer-data-container">
+            <div class="form-row">
+                <label>Controlegetal</label>
+                <input type="text" id="controlegetal" readonly />
+            </div>
+            <div class="form-row">
+                <label>Netto totaal</label>
+                <input type="text" id="netto" readonly />
+            </div>
+            <div class="form-row">
+                <label>B.T.W. %</label>
+                <input asp-for="BTW" type="number" id="btwPercentage" min="0" max="100" />
+            </div>
+            <div class="form-row">
+                <label>B.T.W. bedrag</label>
+                <input type="text" id="btwBedrag" readonly />
+            </div>
+            <div class="form-row">
+                <label>Totaal</label>
+                <input type="text" id="grandTotal" readonly />
+            </div>
+        </div>
+
+        <a asp-page="/FlagPrintPreview" asp-route-id="@Model.FlagQuote.PrijsopgaveId" target="_blank" class="flag-button active">
+            Prijsopgave afdrukken
+        </a>
+
+    <button>Prijsopgave e-mailen</button>
+    <label for="vlagtype">Geprint:</label>
+    <select id="vlagtype" name="vlagtype">
+        <option value="vlag1">Ja</option>
+    </select>
+        <button type="submit">Save</button>
+
+    </form>
+
+    <script src="~/js/FlagQuote.js?v=6"></script>
+
+</body>

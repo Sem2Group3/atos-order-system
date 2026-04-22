@@ -1,0 +1,1099 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\customerpage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\customerpage.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\customerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\customerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\main-switchboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\main-switchboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\main-switchboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\main-switchboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\services\\hasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\services\\hasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\services\\authenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\services\\authenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\wwwroot\\css\\huurcontractvoorduikverenigingadfundumuitdrunen.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\wwwroot\\css\\huurcontractvoorduikverenigingadfundumuitdrunen.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.dal\\data\\flagquotationdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|solutionrelative:webapplication_atos.dal\\data\\flagquotationdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\passwordmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\passwordmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\flagquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\flagquotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iflagquotationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iflagquotationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.dal\\data\\clientdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|solutionrelative:webapplication_atos.dal\\data\\clientdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iclientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iclientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iclientdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iclientdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\bll\\flagquotationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\bll\\flagquotationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iflagquotationdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iflagquotationdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\orderflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\orderflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iorderprintedflagbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iorderprintedflagbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\redirectemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\redirectemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\redirectemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\redirectemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\passwordmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\passwordmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\webapplication_atos.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\webapplication_atos.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iemployeebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iemployeebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.dal\\data\\employeedbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|solutionrelative:webapplication_atos.dal\\data\\employeedbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\bll\\employeebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\bll\\employeebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\interfaces\\iemployeedbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\interfaces\\iemployeedbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\flagquotationrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\flagquotationrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\wwwroot\\css\\customer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\wwwroot\\css\\customer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\_test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\_test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\_test.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\_test.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.dal\\data\\itemdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DE612D6-510F-41EF-875E-9199654AC786}|WebApplication_Atos.DAL\\WebApplication_Atos.DAL.csproj|solutionrelative:webapplication_atos.dal\\data\\itemdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA03F56-75AB-45E1-ADB9-C9AB5E8DD584}|WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.tests\\clientblltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FA03F56-75AB-45E1-ADB9-C9AB5E8DD584}|WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj|solutionrelative:webapplication_atos.tests\\clientblltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FA03F56-75AB-45E1-ADB9-C9AB5E8DD584}|WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.tests\\webapplication_atos.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6FA03F56-75AB-45E1-ADB9-C9AB5E8DD584}|WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj|solutionrelative:webapplication_atos.tests\\webapplication_atos.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\onderhoud-database.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\onderhoud-database.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\onderhoud-database.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\onderhoud-database.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\flagprintpreview.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\flagprintpreview.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\flagprintpreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\flagprintpreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\herinneringvoorduikverenigingadfundumuitdrunen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\herinneringvoorduikverenigingadfundumuitdrunen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\herinneringvoorduikverenigingadfundumuitdrunen.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\herinneringvoorduikverenigingadfundumuitdrunen.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\printedflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\printedflag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.core\\models\\printedflagdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B345DA3-2793-461D-95B9-193424CF89BD}|WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj|solutionrelative:webapplication_atos.core\\models\\printedflagdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\wwwroot\\css\\emaildemo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\wwwroot\\css\\emaildemo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7155B312-55EB-447A-B181-1B798E513B2E}|WebApplication_Atos\\WebApplication_Atos.csproj|solutionrelative:webapplication_atos\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApplication_Atos.styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication_Atos\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApplication_Atos.styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\.vs\\WebApplication_Atos\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\WebApplication_Atos\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\webapplication_atos.bll.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\webapplication_atos.bll.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\bll\\orderflagbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\bll\\orderflagbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|c:\\users\\nasre\\onedrive\\documenten\\atos project\\coding\\asp.net core web app (razor pages)\\webapplication_atos\\webapplication_atos.bll\\bll\\orderbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B8EF3E-0367-4BE0-B568-92C115DCA0FA}|WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj|solutionrelative:webapplication_atos.bll\\bll\\orderbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAgwG4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:29:51.773Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Index.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:29:04.31Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Authenticator.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\Services\\Authenticator.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\Services\\Authenticator.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\Services\\Authenticator.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\Services\\Authenticator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T12:36:50.523Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Hasher.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\Services\\Hasher.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\Services\\Hasher.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\Services\\Hasher.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\Services\\Hasher.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAwwC8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:10:10.207Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\CustomerPage.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\CustomerPage.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\CustomerPage.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\CustomerPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:35:43.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\ClientBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\BLL\\ClientBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\ClientBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\BLL\\ClientBLL.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:22:13.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerPage.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\CustomerPage.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\CustomerPage.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\CustomerPage.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\CustomerPage.cshtml.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAcwO8AAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:41:45.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main-Switchboard.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Main-Switchboard.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Main-Switchboard.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Main-Switchboard.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Main-Switchboard.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:34:34.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main-Switchboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Main-Switchboard.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Main-Switchboard.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Main-Switchboard.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Main-Switchboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:29:29.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "huurcontractvoorDuikverenigingAdFundumuitDrunen.css",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\huurcontractvoorDuikverenigingAdFundumuitDrunen.css",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\wwwroot\\css\\huurcontractvoorDuikverenigingAdFundumuitDrunen.css",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\huurcontractvoorDuikverenigingAdFundumuitDrunen.css",
+              "RelativeToolTip": "WebApplication_Atos\\wwwroot\\css\\huurcontractvoorDuikverenigingAdFundumuitDrunen.css",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-16T12:38:08.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FlagQuotationDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\FlagQuotationDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.DAL\\Data\\FlagQuotationDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\FlagQuotationDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.DAL\\Data\\FlagQuotationDBManager.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAiwCQBAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T12:51:14.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Program.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Program.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T09:41:51.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PasswordManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\PasswordManagement.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\PasswordManagement.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\PasswordManagement.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\PasswordManagement.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAqwHMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T13:46:20.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FlagQuotation.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\FlagQuotation.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\FlagQuotation.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\FlagQuotation.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\FlagQuotation.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T11:43:13.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IFlagQuotationBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IFlagQuotationBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IFlagQuotationBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IFlagQuotationBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IFlagQuotationBLL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAnwA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:15:00.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClientDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\ClientDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.DAL\\Data\\ClientDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\ClientDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.DAL\\Data\\ClientDBManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T08:44:51.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IClientBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IClientBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IClientBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IClientBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IClientBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:17:29.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IClientDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IClientDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IClientDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IClientDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IClientDBManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:17:51.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\appsettings.json",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\appsettings.json",
+              "RelativeToolTip": "WebApplication_Atos\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-17T09:48:23.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FlagQuotationBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\FlagQuotationBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\BLL\\FlagQuotationBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\FlagQuotationBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\BLL\\FlagQuotationBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:28:51.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IFlagQuotationDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IFlagQuotationDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IFlagQuotationDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IFlagQuotationDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IFlagQuotationDBManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:22:19.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderFlag.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\OrderFlag.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\OrderFlag.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\OrderFlag.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\OrderFlag.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:30:37.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IOrderPrintedFlagBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IOrderPrintedFlagBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IOrderPrintedFlagBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IOrderPrintedFlagBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IOrderPrintedFlagBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T21:31:12.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RedirectEmail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\RedirectEmail.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\RedirectEmail.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\RedirectEmail.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\RedirectEmail.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:49:34.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RedirectEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\RedirectEmail.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\RedirectEmail.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\RedirectEmail.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\RedirectEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T07:58:51.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PasswordManagement.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\PasswordManagement.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\PasswordManagement.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\PasswordManagement.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\PasswordManagement.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T14:17:55.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WebApplication_Atos.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj",
+              "RelativeToolTip": "WebApplication_Atos.Core\\WebApplication_Atos.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T13:40:47.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Employee.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:25:27.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IEmployeeBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IEmployeeBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IEmployeeBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IEmployeeBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IEmployeeBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:23:03.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmployeeDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\EmployeeDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.DAL\\Data\\EmployeeDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\EmployeeDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.DAL\\Data\\EmployeeDBManager.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:58:53.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EmployeeBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\EmployeeBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\BLL\\EmployeeBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\EmployeeBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\BLL\\EmployeeBLL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T08:02:37.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IEmployeeDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IEmployeeDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Interfaces\\IEmployeeDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Interfaces\\IEmployeeDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Interfaces\\IEmployeeDBManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:58:11.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Client.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:23:46.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "LogOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\LogOut.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\LogOut.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\LogOut.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\LogOut.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:33:28.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FlagQuotationRule.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\FlagQuotationRule.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\FlagQuotationRule.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\FlagQuotationRule.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\FlagQuotationRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T10:33:12.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApplication_Atos\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-21T07:20:17.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LogOut.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\LogOut.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\LogOut.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\LogOut.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\LogOut.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:31:58.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "customer.css",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\customer.css",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\wwwroot\\css\\customer.css",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\customer.css",
+              "RelativeToolTip": "WebApplication_Atos\\wwwroot\\css\\customer.css",
+              "ViewState": "AgIAAB4BAAAAAAAAAAAAAC0BAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-10T11:38:58.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\AccessDenied.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T11:21:24.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_test.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_test.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\_test.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_test.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\_test.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T08:41:08.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T08:17:48.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_test.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_test.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\_test.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_test.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\_test.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T08:41:56.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ItemDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\ItemDBManager.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.DAL\\Data\\ItemDBManager.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.DAL\\Data\\ItemDBManager.cs",
+              "RelativeToolTip": "WebApplication_Atos.DAL\\Data\\ItemDBManager.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T12:51:07.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ClientBLLTests.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Tests\\ClientBLLTests.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Tests\\ClientBLLTests.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Tests\\ClientBLLTests.cs",
+              "RelativeToolTip": "WebApplication_Atos.Tests\\ClientBLLTests.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T12:26:14.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "WebApplication_Atos.Tests",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj",
+              "RelativeToolTip": "WebApplication_Atos.Tests\\WebApplication_Atos.Tests.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T12:26:55.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Onderhoud-Database.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:35:47.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Onderhoud-Database.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Onderhoud-Database.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T11:31:41.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Order.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\Order.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA5wA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:30:51.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\Role.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:44:32.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "FlagPrintPreview.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:28:39.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "FlagPrintPreview.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\FlagPrintPreview.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T08:17:52.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAACBjwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T06:21:39.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml.cs",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\HerinneringVoorDuikverenigingAdFundumUitDrunen.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T08:17:59.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T08:17:50.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "PrintedFlag.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\PrintedFlag.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\PrintedFlag.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\PrintedFlag.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\PrintedFlag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:25:43.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PrintedFlagDetails.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\PrintedFlagDetails.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.Core\\Models\\PrintedFlagDetails.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.Core\\Models\\PrintedFlagDetails.cs",
+              "RelativeToolTip": "WebApplication_Atos.Core\\Models\\PrintedFlagDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T08:25:42.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "EmailDemo.css",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\EmailDemo.css",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\wwwroot\\css\\EmailDemo.css",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\wwwroot\\css\\EmailDemo.css",
+              "RelativeToolTip": "WebApplication_Atos\\wwwroot\\css\\EmailDemo.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-21T07:14:40.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-30T12:31:40.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T06:39:16.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "WebApplication_Atos\\Pages\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-21T06:40:39.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "applicationhost.config",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\.vs\\WebApplication_Atos\\config\\applicationhost.config",
+              "RelativeDocumentMoniker": ".vs\\WebApplication_Atos\\config\\applicationhost.config",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\.vs\\WebApplication_Atos\\config\\applicationhost.config",
+              "RelativeToolTip": ".vs\\WebApplication_Atos\\config\\applicationhost.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-21T06:31:31.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "RelativeToolTip": "WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T06:32:02.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.json",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.json",
+              "RelativeToolTip": "WebApplication_Atos\\bin\\Debug\\net8.0\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T06:32:18.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "WebApplication_Atos.styles.css",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApplication_Atos.styles.css",
+              "RelativeDocumentMoniker": "WebApplication_Atos\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApplication_Atos.styles.css",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApplication_Atos.styles.css",
+              "RelativeToolTip": "WebApplication_Atos\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApplication_Atos.styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-21T06:32:49.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "WebApplication_Atos.BLL",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\WebApplication_Atos.BLL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T12:39:15.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "OrderFlagBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\OrderFlagBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\BLL\\OrderFlagBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\OrderFlagBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\BLL\\OrderFlagBLL.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T08:04:08.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "OrderBLL.cs",
+              "DocumentMoniker": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\OrderBLL.cs",
+              "RelativeDocumentMoniker": "WebApplication_Atos.BLL\\BLL\\OrderBLL.cs",
+              "ToolTip": "C:\\Users\\nasre\\OneDrive\\Documenten\\Atos project\\Coding\\ASP.NET Core Web App (Razor Pages)\\WebApplication_Atos\\WebApplication_Atos.BLL\\BLL\\OrderBLL.cs",
+              "RelativeToolTip": "WebApplication_Atos.BLL\\BLL\\OrderBLL.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T08:03:55.339Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

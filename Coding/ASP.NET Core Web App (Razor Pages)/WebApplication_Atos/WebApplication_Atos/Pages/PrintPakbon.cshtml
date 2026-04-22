@@ -1,0 +1,73 @@
+﻿@page "{id:int}"
+@model WebApplication_Atos.Pages.PrintPakbonModel
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/printpakbon.css?v=1">
+
+<body class="confectiebon-page">
+    <img src="~/img/header.png" class="header-image" alt="Kopafbeelding" />
+
+    <div class="pakbon-header">
+        <div class="left-info">
+            <p><strong>Tel:</strong> @Model.Client.Telefoon</p>
+            <h1 class="pakbon-title">PAKBON</h1>
+            <p><strong>Ordernummer:</strong> @Model.Order.Ordernummer</p>
+            <p>
+                Hierbij ontvangt u de door u bestelde goederen.<br />
+                Geleverd volgens uw opdracht d.d. @Model.Order.Orderdatum?.ToString("dd-MMM-yy")
+            </p>
+        </div>
+
+        <div class="right-info">
+            <p>
+                <strong>PAKBON</strong><br />
+                @Model.Client.Naam<br />
+                T.a.v @Model.Client.Contactpersoon<br />
+                @Model.Client.Adres<br />
+                @Model.Client.Postcode @Model.Client.Woonplaats
+            </p>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Afmeting</th>
+                    <th>Omschrijving</th>
+                    <th>Order</th>
+                    <th>Geleverd</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.OrderRule.Formaat</td>
+                    <td>@Model.Order.NaamVlag</td>
+                    <td><strong>@Model.OrderRule.Hoeveelheid</strong></td>
+                    <td>..........................</td>
+                </tr>
+                <tr>
+                    <td>..........................</td>
+                    <td>..........................</td>
+                    <td>......</td>
+                    <td>......</td>
+                </tr>
+                <tr>
+                    <td>..........................</td>
+                    <td>..........................</td>
+                    <td>......</td>
+                    <td>......</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-contact">
+        <p>Afleverdatum: @Model.Order.Afleverdatum?.ToString("dd-MM-yyyy")</p>
+    </div>
+    <div class="opmerking-box">
+        <p><strong>Opmerking :</strong></p>
+    </div>
+
+</body>

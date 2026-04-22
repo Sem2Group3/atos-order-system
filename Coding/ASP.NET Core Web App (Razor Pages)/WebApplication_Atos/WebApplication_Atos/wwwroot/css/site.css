@@ -1,0 +1,50 @@
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+    header h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logout-button {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 25%;
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #c82333;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+    .logout-button:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+
+    .logout-button:active {
+        background-color: #bd2130;
+        transform: translateY(1px);
+    }

@@ -1,0 +1,24 @@
+﻿@page
+@model WebApplication_Atos.Pages._testModel
+@{
+}
+
+<h1>Employee amount: @Model.Employees.Count</h1>
+
+<h1>Employees:</h1>
+@foreach (var user in Model.Employees)
+{
+    <ol>@user.ToString()</ol>
+}
+
+@foreach (var output in Model.Strings)
+{
+    <ol>@output</ol>
+}
+
+@foreach (bool success in Model.DatabaseChanges)
+{
+    <ol>@success</ol>
+}
+
+Current role: @HttpContext.Session.GetString("Role")

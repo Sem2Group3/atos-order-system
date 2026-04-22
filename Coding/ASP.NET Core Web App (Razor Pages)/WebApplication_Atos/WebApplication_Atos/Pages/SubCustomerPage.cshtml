@@ -1,0 +1,223 @@
+﻿@page
+@model WebApplication_Atos.Pages.SubCustomerPageModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/quotes.css?v=3" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTTlsqOihcptniZAoB9yIQzsuUkRXVwe9oQ&s" alt="Atos Logo">
+<body>
+    
+    <form method="post" onsubmit="cleanCurrencyInputs()">
+    <div class="customer-data-container">
+        <div class="header">
+            <span class="title">Prijsopgave</span>
+        </div>
+
+        <div class="form-grid">
+            <div class="form-row">
+                <label for="emailAddress">E-mail adres:</label>
+                <div class="input-group">
+                    <input asp-for="Order.EmailAddress" type="email" id="email" value="@Model.CurrentClient.Email" readonly>
+                </div>
+                <label asp-for="Order.ContactPersoon">Contactpersoon:</label>
+                <div class="input-group">
+                    <input asp-for="Order.ContactPersoon" type="text" id="contact person" value="@Model.CurrentClient.Contactpersoon" readonly>
+                    <button type="button" class="small-button">M</button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="quotePrice">Prijsopgave</label>
+                <div class="input-group">
+                    <input asp-for="Order.PrijsopgaveId" type="text" readonly />
+                </div>
+                <label for="dateTime">Datum</label>
+                <div class="input-group">
+                    <input asp-for="Order.DatumPrijsopgave" type="date" id="date">
+                    <button type="button" class="small-button">Wijzig klant...</button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Afgehandeld door</label>
+                <select asp-for="Order.WerknemerId">
+                    @foreach (var option in Model.Employees)
+                    {
+                        <option value="@option.WerknemerId">@option.Werknemer</option>
+                    }
+                </select>
+                <label>Levertijd</label>
+                <select asp-for="Order.Levertijd">
+                    @foreach (var option in Model.Levertijd)
+                    {
+                        <option value="@option.Levertijd">@option.Levertijd</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Referentie</label>
+                <select asp-for="Order.Bijzonderheden">
+                    @foreach (var option in Model.ReferentieText)
+                    {
+                        <option value="@option.ReferentieText">@option.ReferentieText</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Notities</label>
+                <input asp-for="Order.Notities" type="text" />
+            </div>
+
+            <div class="form-row">
+                <div></div>
+            </div>
+
+            <div class="form-row">
+                <div></div>
+            </div>
+        </div>
+        <div class="flags">
+                <button type="button" class="flag-button active" onclick="openItemModal()">Z</button>
+                <button type="button" class="flag-button active">Inkoopinfo</button>
+        </div>
+                <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addItemModalLabel">Modal Title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-table-container">
+                                    <table class="table table-striped table-hover table-responsive" id="modalTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Select</th>
+                                                <th>Artikelgroep</th>
+                                                <th>Artikelsubgroep</th>
+                                                <th>Artikelnummer</th>
+                                                <th>Omschrijving</th>
+                                                <th>Prijs</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.Items)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                    <button type="button" class="btn btn-sm btn-primary"
+                                                            onclick="addItemToOrderRules('@item.Artikelnummer', '@item.Omschrijving', '@item.Prijs', '@item.InkoopPrijs', '@item.Sorteervolgorde', event)">
+                                                        Select
+                                                    </button>
+                                                    </td>
+                                                    <td>@item.Artikelgroep</td>
+                                                    <td>@item.Artikelsubgroep</td>
+                                                    <td>@item.Artikelnummer</td>
+                                                    <td>@item.Omschrijving</td>
+                                                    <td>@item.Prijs</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        <div class="table-container">
+                <table id="orderRulesTable">
+                    <thead>
+                        <tr>
+                            <th>Artikel</th>
+                            <th>Omschrijving</th>
+                            <th>Aantal</th>
+                            <th>Prijs</th>
+                            <th>Totaal</th>
+                            <th>Sorteervolgorde</th>
+                            <th>Marge</th>
+                            <th>Inkoop</th>
+                            <th>Totaalinkoop</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.OrderRules.Count; i++)
+                        {
+                            <tr>
+                                <input name="OrderRules[@i].PrijsopgaveRegelId" type="hidden" value="@Model.OrderRules[i].PrijsopgaveRegelId" />
+                                <input name="OrderRules[@i].PrijsopgaveId" type="hidden" value="@Model.Order.PrijsopgaveId" />
+                                <td><input name="OrderRules[@i].Artikelnummer" value="@Model.OrderRules[i].Artikelnummer" readonly /></td>
+                                <td><input name="OrderRules[@i].Omschrijving" value="@Model.OrderRules[i].Omschrijving" readonly /></td>
+                                <td><input name="OrderRules[@i].Hoeveelheid" value="@Model.OrderRules[i].Hoeveelheid" type="number" class="hoeveelheid" min="1" /></td>
+                                <td><input name="OrderRules[@i].Prijs" value="@Model.OrderRules[i].Prijs" class="prijs euro-input" /></td>
+                                <td><input class="totaal" type="text" readonly /></td>
+                                <td><input name="OrderRules[@i].Sorteervolgorde" value="@Model.OrderRules[i].Sorteervolgorde" /></td>
+                                <td><input class="marge" type="text" readonly /></td>
+                                <td><input name="OrderRules[@i].InkoopPrijs" value="@Model.OrderRules[i].InkoopPrijs" class="inkoopprijs euro-input" /></td>
+                                <td><input class="totaalinkoop" type="text" readonly /></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        <div class="bottom-actions form-grid">
+            <div class="form-row">
+                <label for="controlegetal">Controlegetal:</label>
+                <div class="input-group">
+                    <input type="text" id="controlegetal" value=" ">
+                </div>
+                <label for="nettoTotaal">Netto totaal:</label>
+                <div class="input-group">
+                    <input type="text" id="nettoTotaal" value=" ">
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="btwPercent">B.T.W. %</label>
+                <div class="input-group">
+                    <input asp-for="BTW" type="number" id="btwPercentage" min="0" max="100" />
+                </div>
+                <label for="btwBedrag">B.T.W. bedrag:</label>
+                <div class="input-group">
+                    <input type="text" id="btwBedrag" value=" ">
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="voorb">Voorb:</label>
+                <select id="voorb">
+                    <option>Ja</option>
+                    <option>Nee</option>
+                </select>
+                <label for="totaal">Totaal:</label>
+                <div class="input-group">
+                    <input type="text" id="totaal" value=" ">
+                </div>
+            </div>
+            <div class="flags">
+                    <a asp-page="/PrintPreview" asp-route-id="@Model.Order.PrijsopgaveId" target="_blank" class="flag-button active">
+                        Prijsopgave afdrukken
+                    </a>
+
+
+                <button type="button" class="flag-button active">Prijsopgave e-mail</button>
+                    <label for="voorb">Geprint:</label>
+                    <select asp-for="Order.Geprint">
+                        <option>Ja</option>
+                        <option>Nee</option>
+                    </select>
+            </div>
+            
+        </div>
+            <div class="flags"></div>
+                <button type="submit" name="type" value="Submit" class="flag-button active">Save</button>
+            </div>
+            </form>
+
+            <script src="~/js/SubCustomer.js?v=6"></script>
+</body>

@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="text-center">
+        <form method="post">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" placeholder="Username" name="usernameInput">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password" name="passwordInput">
+            </div>
+            <span class="text-danger">
+                @Html.ValidationMessage("LoginError")
+            </span>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>

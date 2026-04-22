@@ -1,0 +1,309 @@
+﻿.customer-data-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto 1fr auto;
+    gap: 10px;
+    padding: 15px;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.header {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .header .title {
+        font-weight: bold;
+    }
+
+    .header .close-button {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+.form-grid {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    gap: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    grid-column: 1 / 5;
+    display: flex;
+    align-items: center;
+}
+
+    .form-row > label {
+        text-align: right;
+        padding-right: 5px;
+        white-space: nowrap;
+    }
+
+    .form-row > input[type="text"],
+    .form-row > input[type="email"],
+    .form-row > select {
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        flex-grow: 1;
+    }
+
+    .form-row > textarea {
+        grid-column: 1 / 3;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .form-row .input-group {
+        display: flex;
+        gap: 5px;
+        flex-grow: 1;
+    }
+
+    .form-row .right-label {
+        justify-self: end;
+        text-align: right;
+        padding-left: 10px;
+    }
+
+    .form-row .right-group {
+        grid-column: 3 / 5;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5px;
+        align-items: center;
+    }
+
+        .form-row .right-group > label {
+            text-align: right;
+            padding-right: 5px;
+            white-space: nowrap;
+        }
+
+        .form-row .right-group > input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+.small-button {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.flags {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.flag-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+    .flag-button.active {
+        background-color: #e0e0e0;
+    }
+
+
+.invoice-details-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+    .invoice-details-container .title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .invoice-details-container .form-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5px;
+    }
+
+    .invoice-details-container .form-row {
+        grid-column: 1 / 3;
+        display: flex;
+        align-items: center;
+    }
+
+        .invoice-details-container .form-row > label {
+            text-align: right;
+            padding-right: 5px;
+            white-space: nowrap;
+            font-size: 0.9em;
+        }
+
+        .invoice-details-container .form-row > input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 0.9em;
+            background-color: #eee;
+        }
+
+
+.bottom-actions {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+    .bottom-actions .new-quote-button,
+    .bottom-actions .example-quotation-button {
+        padding: 8px 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: #eee;
+        cursor: pointer;
+    }
+
+table.tableExcel {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 9pt;
+}
+
+    table.tableExcel th {
+        background: #F3F3F3;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #C2CAD8;
+        height: 30px;
+        transition: all 0.3s;
+    }
+
+    table.tableExcel td {
+        height: 25px;
+        border: 1px solid #C2CAD8;
+        background: #F3F3F3;
+        border: 0px solid transparent;
+        transition: all 0.3s;
+    }
+
+
+    table.tableExcel tr:nth-child(even) table.tableExcel td {
+        background: #F1F1F1;
+    }
+
+
+    table.tableExcel tr:nth-child(odd) table.tableExcel td {
+        background: #FEFEFE;
+    }
+
+    table.tableExcel tbody tr td span {
+        background: #fff;
+        -webkit-border-radius: 0px;
+    }
+
+    table.tableExcel tbody tr td input {
+        -webkit-border-radius: 0px;
+    }
+
+.table-wrapper {
+    overflow-x: auto; 
+    max-width: 100%; 
+    display: block; 
+    margin-top: 20px;
+}
+
+.flag-button.active {
+    background-color: #ccc;
+
+}
+.form-sections-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.customer-info-wrapper {
+    flex: 2;
+}
+
+.invoice-details-container {
+    flex: 1;
+    max-width: 400px;
+}
+.table-wrapper {
+    margin-top: 20px;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+    .table-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .table-wrapper thead {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+    .table-wrapper th,
+    .table-wrapper td {
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        white-space: nowrap;
+    }
+
+    .table-wrapper tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .table-wrapper tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .flag-button.disabled-tab {
+        background-color: #ccc !important; 
+        color: #666 !important; 
+        border-color: #999 !important; 
+        cursor: not-allowed !important; 
+        opacity: 0.6;
+        pointer-events: none; 
+    }
+
+    .flag-button[disabled] {
+        pointer-events: none;
+    }

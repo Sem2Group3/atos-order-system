@@ -1,0 +1,856 @@
+﻿@page
+@model WebApplication_Atos.Pages.CustomerPageModel
+@{
+<link rel="stylesheet" href="~/css/customer.css?v=2" />
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTTlsqOihcptniZAoB9yIQzsuUkRXVwe9oQ&s" alt="Atos Logo">
+<body>
+    <div class="customer-data-container">
+        <div class="header">
+            <span class="title">Klantgegevens</span>
+        </div>
+        <form method="post">
+            <div class="form-sections-container">
+                <div class="customer-info-wrapper">
+                    <div class="form-grid">
+                        <div class="form-row">
+                            <label for="customerNumber">Klantnummer</label>
+                            <div class="input-group">
+                                <input asp-for="currentClient.Klantid" type="text" readonly />
+                                @if (!Model.changeMode)
+                                {
+                                    <button class="small-button" type="submit" name="postString" value="EnterEditMode">Verander ...</button>
+                                }
+                                else
+                                {
+                                    <button class="small-button" type="submit" name="postString" value="SaveChanges">Wijzigingen opslaan</button>
+                                }
+                                <input type="hidden" name="changeMode" value="@Model.changeMode" />
+
+                                @if (Model.currentClientID == 0)
+                                {
+                                    <button type="submit" name="postString" value="SaveClientButtonClick">Opslaan</button>
+                                }
+                                else
+                                {
+                                    <button type="submit" name="postString" value="NewClientButtonClick">Nieuw</button>
+                                }
+                            </div>
+
+                            <button class="small-button" type="button" data-bs-toggle="modal" data-bs-target="#SearchCustomerModal">Zoeken</button>
+                            <input type="text" id="SearchedClient" value="" readonly />
+                        </div>
+                        @if (Model.changeMode == true)
+                        {
+                            <div class="form-row">
+                                <label>Naam</label>
+                                <input asp-for="currentClient.Naam" type="text" />
+                                <label class="right-label">Uitstaand Bedrag</label>
+                                <input type="text" id="OutstandingMoney" value="" />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Adres</label>
+                                <input asp-for="currentClient.Adres" type="text" />
+                                <label class="right-label">Telefoonnummer</label>
+                                <input asp-for="currentClient.Fax" type="text" />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Postcode</label>
+                                <input asp-for="currentClient.Postcode" type="text" />
+                                <label class="right-label">Mobiel</label>
+                                <input asp-for="currentClient.Telefoon" type="text" />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Woonplaats</label>
+                                <input asp-for="currentClient.Woonplaats" type="text" />
+                                <label class="right-label">E-mailadres</label>
+                                <input asp-for="currentClient.Email" type="email" />
+                            </div>
+
+                            <div class="form-row">
+                                <input type="text" value="" />
+                                <button class="small-button">Zoek artikel</button>
+                                <label class="right-label">Post voor de aandacht van</label>
+                                <input asp-for="currentClient.Contactpersoon" type="text" />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Noities</label>
+                                <textarea asp-for="currentClient.Notities"></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <label>Geblokkeerd</label>
+                                <select asp-for="currentClient.Geblokkeerd">
+                                    <option value="Yes">Ja</option>
+                                    <option value="No">Nee</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div></div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="form-row">
+                                <label>Naam</label>
+                                <input asp-for="currentClient.Naam" type="text" readonly />
+                                <label class="right-label">Uitstaand Bedrag</label>
+                                <input type="text" id="OutstandingMoney" value="" />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Adres</label>
+                                <input asp-for="currentClient.Adres" type="text" readonly />
+                                <label class="right-label">Telefoonnummer</label>
+                                <input asp-for="currentClient.Fax" type="text" readonly />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Postcode</label>
+                                <input asp-for="currentClient.Postcode" type="text" readonly />
+                                <label class="right-label">Mobiel</label>
+                                <input asp-for="currentClient.Telefoon" type="text" readonly />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Woonplaats</label>
+                                <input asp-for="currentClient.Woonplaats" type="text" readonly />
+                                <label class="right-label">E-mailadres</label>
+                                <input asp-for="currentClient.Email" type="email" readonly />
+                            </div>
+
+                            <div class="form-row">
+                                <input type="text" value="" />
+                                <button class="small-button">Zoek artikel</button>
+                                <label class="right-label">Post voor de aandacht van</label>
+                                <input asp-for="currentClient.Contactpersoon" type="text" readonly />
+                            </div>
+
+                            <div class="form-row">
+                                <label>Noities</label>
+                                <textarea asp-for="currentClient.Notities" readonly></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <label>Geblokkeerd</label>
+                                <select asp-for="currentClient.Geblokkeerd" disabled>
+                                    <option value="Yes">Ja</option>
+                                    <option value="No">Nee</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div></div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+                <div class="invoice-details-container">
+                    @if (Model.changeMode == true)
+                    {
+                        <div class="invoice-details-container">
+                            <div class="title">Factuurgegevens adres</div>
+                            <div class="form-grid">
+                                <div class="form-row">
+                                    <label for="nameInvoice">Naam</label>
+                                    <input asp-for="currentClient.FactuurNaam" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="addressInvoice">Adres</label>
+                                    <input asp-for="currentClient.FactuurAdres" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="postcodeInvoice">Postcode</label>
+                                    <input asp-for="currentClient.FactuurPostcode" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="placeOfResidenceInvoice">Woonplaats</label>
+                                    <input asp-for="currentClient.FactuurWoonplaats" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="attnInvoice">Factuur attn</label>
+                                    <input asp-for="currentClient.FactuurContactpersoon" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="digiInvoice">Digi factuur</label>
+                                    <input asp-for="currentClient.FactuurEmail" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="btwvatnr">Btw-Vat nr:</label>
+                                    <input asp-for="currentClient.BTWnummer" type="text" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="notes">Noities Contactpersoon</label>
+                                    <textarea asp-for="currentClient.NotitiesContactpersoon"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="invoice-details-container">
+                            <div class="title"> Factuurgegevens adres</div>
+                            <div class="form-grid">
+                                <div class="form-row">
+                                    <label for="nameInvoice">Naam</label>
+                                    <input asp-for="currentClient.FactuurNaam" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="addressInvoice">Adres</label>
+                                    <input asp-for="currentClient.FactuurAdres" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="postcodeInvoice">Postcode</label>
+                                    <input asp-for="currentClient.FactuurPostcode" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="placeOfResidenceInvoice">Woonplaats</label>
+                                    <input asp-for="currentClient.FactuurWoonplaats" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="attnInvoice">Factuur attn</label>
+                                    <input asp-for="currentClient.FactuurContactpersoon" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="digiInvoice">Digi factuur</label>
+                                    <input asp-for="currentClient.FactuurEmail" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="btwvatnr">Btw-Vat nr:</label>
+                                    <input asp-for="currentClient.BTWnummer" type="text" readonly />
+                                </div>
+                                <div class="form-row">
+                                    <label for="notes">Noities Contactpersoon</label>
+                                    <textarea asp-for="currentClient.NotitiesContactpersoon" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </form>
+
+        <div class="flags">
+            @{
+                bool hasFinanceRole = User.IsInRole("finance");
+                bool hasOrdersRole = User.IsInRole("orders");
+                bool hasProduceRole = User.IsInRole("produce");
+                
+                bool canAccessOffertes = hasOrdersRole;
+                bool canAccessOrders = hasProduceRole;
+                bool canAccessHuurconctract = hasFinanceRole;
+                bool canAccessFactuur = hasFinanceRole;
+                bool canAccessHerinnering = hasFinanceRole;
+                bool canAccessWinkel = true;
+            }
+
+                <button class="flag-button @(canAccessOffertes ? "" : "disabled-tab")" data-table-key="Offerte vlag-mast" @(canAccessOffertes ? "" : "disabled")>
+                Offerte vlag-mast
+            </button>
+            <button class="flag-button @(canAccessOffertes ? "" : "disabled-tab")" data-table-key="Offerte bedrukte vlag" @(canAccessOffertes ? "" : "disabled")>
+                Offerte bedrukte vlag
+            </button>
+            <button class="flag-button @(canAccessOrders ? "" : "disabled-tab")" data-table-key="Order Vlag-mast" @(canAccessOrders ? "" : "disabled")>
+                Order vlag - mast
+            </button>
+            <button class="flag-button @(canAccessOrders ? "" : "disabled-tab")" data-table-key="Order bedrukte-vlag" @(canAccessOrders ? "" : "disabled")>
+                Order bedrukte vlag
+            </button>
+            <button class="flag-button @(canAccessHuurconctract ? "" : "disabled-tab")" data-table-key="Huurcontract" @(canAccessHuurconctract ? "" : "disabled")>
+                Huurcontract
+            </button>
+            <button class="flag-button @(canAccessFactuur ? "" : "disabled-tab")" data-table-key="Factuur" @(canAccessFactuur ? "" : "disabled")>
+                Factuur
+            </button>
+            <button class="flag-button @(canAccessHerinnering ? "" : "disabled-tab")" data-table-key="Herinnering" @(canAccessHerinnering ? "" : "disabled")>
+                Herinnering
+            </button>
+            <!-- nog geen autoriteit op winkel pagina geimplementeerd -->
+            <button class="flag-button" @(canAccessWinkel ? "" : "disabled-tab")" data-table-key="Winkel" @(canAccessWinkel ? "" : "disabled")>
+                Winkel
+            </button>
+
+        </div>
+
+        <div id="Offerte vlag-mast" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Datum</th>
+                        <th>Referentie</th>
+                        <th>Contactpersoon</th>
+                        <th>E-mail gestuurd naar</th>
+                        <th>Werknemer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @if (Model.CurrentClientFlagQuotes != null && Model.CurrentClientFlagQuotes.Any())
+                    {
+                        foreach (var quotes in Model.CurrentClientFlagQuotes)
+                        {
+                            <tr>
+                                <td><form method="post" asp-page-handler="EditPrijsogave"><button class="flag-button" type="submit" name="PrijsopgaveId" value="@quotes.PrijsopgaveId">Edit</button></form></td>
+                                <td>@quotes.DatumPrijsopgave?.ToString("dd-MMM-yy")</td>
+                                <td>@quotes.ReferentieText</td>
+                                <td>@quotes.ContactPersoon</td>
+                                <td>@quotes.EmailAdres</td>
+                                <td>@(User.Identity?.Name ?? "—")</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6">Geen bestellingen gevonden voor deze klant.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="bottom-actions">
+                <form method="post" asp-page-handler="NewPrijsopgave">
+                    <button class="new-quote-button">Nieuwe prijsopgave..</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div id="Offerte bedrukte vlag" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Datum</th>
+                        <th>Referintie</th>
+                        <th>Contactpersoon</th>
+                        <th>E-mail adres</th>
+                        <th>Behar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.CurrentClientFlagQuotes != null && Model.CurrentClientFlagQuotes.Any())
+                    {
+                        foreach (var quotes in Model.CurrentClientFlagQuotes)
+                        {
+                            <tr>
+                                <td><form method="post" asp-page-handler="EditFlagQuote"><button class="flag-button" type="submit" name="PrijsopgaveId" value="@quotes.PrijsopgaveId">Edit</button></form></td>
+                                <td>@quotes.DatumPrijsopgave?.ToString("dd-MMM-yy")</td>
+                                <td>@quotes.Bijzonderheden</td>
+                                <td>@quotes.ContactPersoon</td>
+                                <td>@quotes.EmailAdres</td>
+                                <td>@Model.GetEmployeeName(quotes.WerknemerId)</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6">Geen vlag citaten gevonden voor deze klant.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="bottom-actions">
+                <form method="post" asp-page-handler="NewFlagQuote">
+                    <button class="new-quote-button">Nieuwe prijsogave..</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="Order Vlag-mast" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Orderdatum</th>
+                        <th>Afleverdatum</th>
+                        <th>Print</th>
+                        <th>Factuur</th>
+                        <th>Totaal</th>
+                        <th>Referntie</th>
+                        <th>Contactpersoon</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.FlagOrders != null && Model.FlagOrders.Any())
+                    {
+                        foreach (var flags in Model.FlagOrders)
+                        {
+                            <tr>
+                                <td><form method="post" asp-page-handler="EditOrderFlag"><button class="flag-button" type="submit" name="OrderFlagId" value="@flags.OrderId">Edit</button></form></td>
+                                <td>@flags.Orderdatum?.ToString("dd-MMM-yy")</td>
+                                <td>@flags.Afleverdatum.ToString("dd-MMM-yy")</td>
+                                <td>@flags.Geprint</td>
+                                <td>@flags.Gefactureerd</td>
+                                <td>€ @Model.GetTotal(flags)</td>
+                                <td>@flags.Bijzonderheden</td>
+                                <td>@flags.Contactpersoon</td>
+                                <td>@flags.EmailAdres</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="9">Geen bestellingen gevonden voor deze klant.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="bottom-actions">
+                <form method="post" asp-page-handler="NewOrderFlag">
+                    <button class="new-quote-button">Nieuwe order..</button>
+                </form>
+                <button type="button" class="new-quote-button" data-bs-toggle="modal" data-bs-target="#PrijsopgaveModal">
+                    Prijsopgave..
+                </button>
+
+            </div>
+        </div>
+
+        <div id="Order bedrukte-vlag" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Orderdatum</th>
+                        <th>Afleverdatum</th>
+                        <th>NaamVlag</th>
+                        <th>Aantal</th>
+                        <th>Leverancier</th>
+                        <th>Geprint</th>
+                        <th>Factuur</th>
+                        <th>E-mail adres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.CurrentClientPrintedFlags != null && Model.CurrentClientPrintedFlags.Any())
+                    {
+                        foreach (var order in Model.CurrentClientPrintedFlags)
+                        {
+                            <tr>
+                                <td><form method="post" asp-page-handler="EditOrderPrintedFlag"><button class="flag-button" type="submit" name="orderID" value="@order.OrderId">Edit</button></form></td>
+                                <td>@order.Orderdatum?.ToString("dd-MMM-yy")</td>
+                                <td>@order.Afleverdatum?.ToString("dd-MMM-yy")</td>
+                                <td>@order.NaamVlag</td>
+                                <td>@Model.GetQuantity(order.OrderId)</td>
+                                <td>@Model.GetLevancierName(order.LeverancierId)</td>
+                                <td>@order.Geprint</td>
+                                <td>@order.Gefactureerd</td>
+                                <td>@order.EmailAdres</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="9">Geen bestellingen gevonden voor deze klant.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="bottom-actions">
+                <form method="post" asp-page-handler="NewOrder">
+                    <button class="new-quote-button" type="submit">Nieuwe order..</button>
+                </form>
+                <button class="new-quote-button">Herhaal order</button>
+                <button type="button" class="new-quote-button" data-bs-toggle="modal" data-bs-target="#PrijsopgaveModal2">
+                    Prijsopgave..
+                </button>
+            </div>
+
+        </div>
+
+        <div id="Huurcontract" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Orderdatum</th>
+                        <th>Huren vana</th>
+                        <th>Huren tot</th>
+                        <th>Referntie</th>
+                        <th>Geprint</th>
+                        <th>Afgeleverd</th>
+                        <th>Gefacturee</th>
+                        <th>ContactPersoon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Factuur" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factuumum</th>
+                        <th>Facturdatum</th>
+                        <th>Gep</th>
+                        <th>Referntie</th>
+                        <th>Totaal</th>
+                        <th>Vervaldatum</th>
+                        <th>Openstaand</th>
+                        <th>Verstu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Herinnering" class="table-wrapper tableExcel" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ter attentie van</th>
+                        <th>Datum</th>
+                        <th>Onderwerp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Winkel" class="table-wrapper tableExcel" style="display: none;">
+        </div>
+
+
+    <script>
+        function showTable(tableKey) {
+            const tableIds = [
+                "Offerte vlag-mast",
+                "Offerte bedrukte vlag",
+                "Order Vlag-mast",
+                "Order bedrukte-vlag",
+                "Huurcontract",
+                "Factuur",
+                "Herinnering",
+                "Winkel"
+            ];
+
+            tableIds.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = (id === tableKey) ? "block" : "none";
+            });
+
+            document.querySelectorAll(".flag-button").forEach(btn => {
+                btn.classList.remove("active");
+                if (btn.textContent.trim() === tableKey) {
+                    btn.classList.add("active");
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.flag-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    // prevent access if user doesn't have authority
+                    if (this.disabled) {
+                        return; // Stop the function if the button is natively disabled
+                    }
+
+                    const tableKey = this.getAttribute('data-table-key');
+                    if (tableKey) {
+                        showTable(tableKey);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+
+
+
+<div class="modal fade" id="SearchCustomerModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SearchCustomerModalLabel">Modale Titel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-table-container">
+                    <input type="hidden" name="postString" value="SelectSearchClientID" />
+                    <table class="tableExcel" id="modalTable">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>KlantId</th>
+                                <th>Naam</th>
+                                <th>Adres</th>
+                                <th>ContactPersoon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var clientInfo in Model.Clients)
+                            {
+                                <tr>
+                                    <td>
+                                        <form method="post">
+                                            <input type="hidden" name="postString" value="SelectSearchClientID" />
+                                            <button type="submit" name="postItem" value="@clientInfo.Klantid">Select</button>
+                                        </form>
+                                    </td>
+
+                                    <td>@clientInfo.Klantid</td>
+                                    <td>@clientInfo.Naam</td>
+                                    <td>@clientInfo.Adres</td>
+                                    <td>@clientInfo.Contactpersoon</td>
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dichtbij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="PrijsopgaveModal" tabindex="-1" aria-labelledby="PrijsopgaveModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Prijsopgave voor accessoires</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-sm table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th></th>
+                            <th>Prijsopgave</th>
+                            <th>Datum prijsopgave</th>
+                            <th>Netto</th>
+                            <th>Btw</th>
+                            <th>Bruto</th>
+                            <th>Levertijd</th>
+                            <th>Geprint</th>
+                            <th>Bijzonderheden</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var offerte in Model.UserOrders)
+                        {
+                            <tr>
+                                <td>
+                                    <form method="post" asp-page-handler="NewOrderFlagPrijsopgave">
+                                        <input type="hidden" name="serializedOrder" value="@Model.SerializeOrder(offerte)" />
+                                        <button type="submit">Selecteer</button>
+                                    </form>
+                                </td>
+                                <td>@offerte.PrijsopgaveId</td>
+                                <td>@offerte.DatumPrijsopgave?.ToString("dd-MMM-yy")</td>
+                                <td>€ @Model.CalculateNetto(offerte).ToString("F2")</td>
+                                <td>@offerte.BTW?.ToString("P0")</td>
+                                <td>€ @((Model.CalculateNetto(offerte) * (1 + (double)offerte.BTW)).ToString("F2"))</td>
+                                <td>@offerte.Levertijd</td>
+                                <td>@offerte.Geprint</td>
+                                <td>@offerte.Bijzonderheden</td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="PrijsopgaveModal2" tabindex="-1" aria-labelledby="PrijsopgaveModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Prijsopgave voor accessoires</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-sm table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th></th>
+                            <th>Prijsopgave</th>
+                            <th>Datum prijsopgave</th>
+                            <th>formaat</th>
+                            <th>type</th>
+                            <th>kleuren</th>
+                            <th>Aantal</th>
+                            <th>prijs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var offerte in Model.CurrentClientFlagQuotes)
+                        {
+                            foreach (var rule in Model.GetFlagQuotationRules(offerte))
+                            {
+                                var ruleJson = Model.SerializePrintedFlagRule(rule);
+                                var offerteJson = Model.SerializePrintedFlag(offerte);
+                                <tr>
+                                    <td>
+                                        <form method="post" asp-page-handler="NewPrintedFlagPrijsopgave" onsubmit="return attachNaamVlag(this);">
+                                            <input type="hidden" name="serializedPrintedFlagRule" value="@ruleJson" />
+                                            <input type="hidden" name="serializedPrintedFlag" value="@offerteJson" />
+                                            <input type="hidden" name="NaamVlag" />
+                                            <button type="submit">Selecteer</button>
+                                        </form>
+                                    </td>
+                                    <td>@rule.PrijsopgaveId</td>
+                                    <td>@offerte.DatumPrijsopgave?.ToString("dd-MMM-yy")</td>
+                                    <td>@rule.Formaat</td>
+                                    <td>@rule.Type</td>
+                                    <td>@rule.Kleuren</td>
+                                    <td>@rule.Hoeveelheid</td>
+                                    <td>@rule.Prijs.ToString("F2")</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+
+                <div class="mt-3">
+                    <label for="globalNaamVlagInput">Naam vlag:</label>
+                    <input id="globalNaamVlagInput" type="text" class="form-control" value=""/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function attachNaamVlag(form) {
+        const naamVlagInput = document.getElementById("globalNaamVlagInput");
+        const hiddenInput = form.querySelector("input[name='NaamVlag']");
+        hiddenInput.value = naamVlagInput.value;
+
+        if (hiddenInput.value.trim() !== "") {
+            return true;
+        }
+
+        alert("Naam van de vlag invullen, aub");
+        return false;
+    }
+</script>
+}

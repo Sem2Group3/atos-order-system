@@ -1,0 +1,188 @@
+﻿@page
+@model WebApplication_Atos.Pages.Factuur_voor_Duikvereniging_Ad_Fundum_uit_DrunenModel
+@{
+}
+<link rel="stylesheet" href="~/css/factuur-voor-Duikvereniging-Ad-undum-it-runen.css">
+<body>
+    <div class="customer-data-container">
+        <div class="form-grid">
+            <div class="form-row">
+                <label for="email">E-mail adres</label>
+                <div class="input-group">
+                    <input type="email" id="email" value="">
+                </div>
+                <button class="small-button">M</button>
+            </div>
+
+            <div class="form-row">
+                <label for="id">Factuur Id</label>
+                <input type="text" id="id" value="1">
+                <label class="right-label">Referentie</label>
+                <select>
+                    <option value="dropdown">Geleveder volgens afspraak</option>
+                    <option value="dropdown"></option>
+                    <option value="dropdown"></option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="id">Factuurnummer</label>
+                <button class="small-button">#</button>
+                <input type="text" id="id" value="250201">
+                <label class="right-label">Betaling</label>
+                <select>
+                    <option value="dropdown">Binnen 10 dagen netto.</option>
+                    <option value="dropdown"></option>
+                    <option value="dropdown"></option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="prijsopgave">Factuurdatum</label>
+                <input type="date" id="date" value="">
+                <label for="bevestiging" class="right-label">FactuurText</label>
+                <select>
+                    <option value="dropdown">geleverd vlogens offerte/orderbevestiging</option>
+                    <option value="dropdown"></option>
+                    <option value="dropdown"></option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="prijsopgave">Vervaldatum</label>
+                <input type="date" id="date" value="">
+            </div>
+
+
+            <div class="form-row">
+                <button class="small-button">Wijzig klant...</button>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Aanta</th>
+                <th>Artikelnun</th>
+                <th>Omschrijving</th>
+                <th>Prijs</th>
+                <th>S</th>
+                <th>Totaal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" placeholder=""></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder=""></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder=""></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder=""></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text" placeholder=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </div>
+    <div class="customer-data-container">
+        <div class="form-row">
+            <label for="afleverdatum">Faactur aan:</label>
+            <input type="name" id="date" value="">
+
+            <label class="right-label">Netto totaal:</label>
+            <input type="total" id="total" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="afleveradres">Adres:</label>
+            <input type="name" id="date" value="">
+            <label class="right-label">BTW:</label>
+            <input type="total" id="total" readonly>
+
+            <label class="right-label">BTW bedrag:</label>
+            <input type="total" id="total" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="t.a.v">Postcode/woonplaats</label>
+            <input type="name" id="date" value="">
+            <input type="name" id="date" value="">
+            <input type="name" id="date" value="">
+            <label class="right-label">Totaal:</label>
+            <input type="total" id="total" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="afleveradres">Postcode/woonplaats:</label>
+            <input type="name" id="date" value="">
+            <input type="name" id="date" value="">
+        </div>
+
+        <div class="form-row">
+            <label for="afleveradres">T.A.V:</label>
+            <input type="name" id="date" value="">
+        </div>
+
+        <div class="flags">
+            <button class="flag-button active">Faactur afdrukken</button>
+            <button class="flag-button active">Digitaal versturen</button>
+            <button class="flag-button">Order Vlag en Mast</button>
+            <button class="flag-button">Order Bedrukte vlag</button>
+            <button class="flag-button">Factuur Verstuurd</button>
+        </div>
+
+        <div class="form-row">
+            <label for="geprint">Geprint</label>
+            <select>
+                <option value="dropdown">Ja</option>
+                <option value="dropdown">Nee</option>
+            </select>
+            <label for="geprint">Betaald</label>
+            <select>
+                <option value="dropdown">Ja</option>
+                <option value="dropdown">Nee</option>
+            </select>
+            <label for="geprint">Digitaal geprint</label>
+            <select>
+                <option value="dropdown">Ja</option>
+                <option value="dropdown">Nee</option>
+            </select>
+
+            <label for="afleveradres">Openstaand:</label>
+            <input type="name" id="date" value="">
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+

@@ -1,0 +1,73 @@
+﻿@page "{id:int}"
+@model WebApplication_Atos.Pages.OrderConfirmationPreviewModel
+@{
+    Layout = null;
+    var order = Model.OrderFlag;
+}
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Orderbevestiging</title>
+    <link rel="stylesheet" href="~/css/orderconfirmation.css" />
+</head>
+<body>
+    <div class="confirmation-container">
+        <img src="~/img/header.png" class="header-image" alt="Kopafbeelding" />
+
+        <h2>ORDERBEVESTIGING</h2>
+        <p><strong>Datum:</strong> @DateTime.Now.ToString("dd-MMM-yy")</p>
+
+        <p>
+            <strong>Afleveradres:</strong><br />
+            Duikvereniging Ad Fundum!<br />
+            De Theems 54<br />
+            5142-SN Drunen<br />
+            T.a.v. Hans<br />
+            Tel: 06 /22488905
+        </p>
+
+        <p><strong>Ordernummer:</strong> @order.Ordernummer</p>
+        <p><strong>Referentie:</strong> Duikvlag 2025</p>
+        <p><strong>Notitie:</strong> Noties over de kleuren van de vlag</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Omschrijving</th>
+                    <th>Hoeveelheid</th>
+                    <th>Prijs</th>
+                    <th>Totaal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderFlagRules)
+                {
+                    <tr>
+                        <td>@item.Omschrijving</td>
+                        <td>@item.Hoeveelheid</td>
+                        <td>€ @item.Prijs?.ToString("0.00")</td>
+                        <td>€ @((item.Hoeveelheid * item.Prijs)?.ToString("0.00"))</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="totals">
+            <p><strong>Netto totaal:</strong> € @Model.NettoTotaal.ToString("0.00")</p>
+            <p><strong>BTW bedrag:</strong> € @Model.BTWPercentage.ToString("0.00")</p>
+            <p><strong>Totaal bedrag:</strong> € @Model.Totaal.ToString("0.00")</p>
+            <p><strong>Betaling:</strong> Binnen 10 dagen netto</p>
+        </div>
+
+        <p>Wij danken u voor deze opdracht en geven u de verzekering dat wij deze met de grootst mogelijke zorgvuldigheid zullen begeleiden en afhandelen.</p>
+
+        <div class="footer">
+            <p><strong>Voor akkoord,</strong></p>
+            <p><strong>Nieuwenhuizen Vlaggen en Masten</strong></p>
+            <p><strong>Duikvereniging Ad Fundum!</strong></p>
+        </div>
+    </div>
+</body>
+</html>

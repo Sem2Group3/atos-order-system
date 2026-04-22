@@ -1,0 +1,246 @@
+﻿@page
+@model WebApplication_Atos.Pages.OrdervlaggenmastenvoorDuikverenigingAdFundumuitDrunenModel
+@{
+}
+<link rel="stylesheet" href="~/css/quotes.css?v=2" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTTlsqOihcptniZAoB9yIQzsuUkRXVwe9oQ&s" alt="Atos Logo">
+<body>
+
+    <form method="post" onsubmit="cleanCurrencyInputs()">
+        <div class="customer-data-container">
+            <div class="header">
+                <span class="title">Prijsopgave</span>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-row">
+                    <label for="emailAddress">E-mail adres:</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.EmailAdres" type="email" id="email" value="@Model.CurrentClient.Email" readonly>
+                    </div>
+                    <label asp-for="OrderFlag.Contactpersoon">Contactpersoon:</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.Contactpersoon" type="text" id="contact person" value="@Model.CurrentClient.Contactpersoon" readonly>
+                        <button type="button" class="small-button">M</button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label asp-for="OrderFlag.OrderId">OrderId</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.OrderId" type="text" readonly />
+                    </div>
+                    <label asp-for="OrderFlag.Betaling">Betaling</label>
+                    <select asp-for="OrderFlag.Betaling">
+                        @foreach (var option in Model.Betaling)
+                        {
+                            <option value="@option.Betaling">@option.Betaling</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="quotePrice">Prijsopgave</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.PrijsopgaveId" type="text" readonly />
+                    </div>
+                    <label asp-for="OrderFlag.Bevestiging">Bevestiging</label>
+                    <select asp-for="OrderFlag.Bevestiging">
+                        @foreach (var option in Model.Bevestiging)
+                        {
+                            <option value="@option.Bevestiging">@option.Bevestiging</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label asp-for="OrderFlag.Ordernummer">Ordernummer</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.Ordernummer" type="text" readonly/>
+                    </div>
+                    <label asp-for="OrderFlag.Bijzonderheden">Ref-Ordernr</label>
+                    <select asp-for="OrderFlag.Bijzonderheden">
+                        @foreach (var option in Model.Ref)
+                        {
+                            <option value="@option.ReferentieText">@option.ReferentieText</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label asp-for="OrderFlag.Orderdatum">Order datum</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.Orderdatum" type="date"/>
+                    </div>
+                    <label asp-for="OrderFlag.WerknemerId">Werknemer:</label>
+                    <select asp-for="OrderFlag.WerknemerId">
+                        @foreach (var option in Model.Employees)
+                        {
+                            <option value="@option.WerknemerId">@option.Werknemer</option>
+                        }
+                    </select>
+
+                </div>
+
+                <div class="form-row">
+                    <label asp-for="OrderFlag.Afleverdatum">Aflever datum</label>
+                    <div class="input-group">
+                        <input asp-for="OrderFlag.Afleverdatum" type="date"/>
+                    </div>
+                    <label asp-for="OrderFlag.Notities">Notities:</label>
+                    <textarea asp-for="OrderFlag.Notities"></textarea>
+
+                </div>
+
+                <div class="form-row">
+                    <button type="button" class="flag-button active">Wijzig klant...</button>
+                </div>
+
+            </div>
+            <div class="flags">
+                <button type="button" class="flag-button active" onclick="openItemModal()">Z</button>
+                <button type="button" class="flag-button active">Inkoopinfo</button>
+            </div>
+            <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addItemModalLabel">Modal Title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-table-container">
+                                <table class="table table-striped table-hover table-responsive" id="modalTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Select</th>
+                                            <th>Artikelgroep</th>
+                                            <th>Artikelsubgroep</th>
+                                            <th>Artikelnummer</th>
+                                            <th>Omschrijving</th>
+                                            <th>Prijs</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.Items)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-primary"
+                                                            onclick="addItemToOrderRules('@item.Artikelnummer', '@item.Omschrijving', '@item.Prijs', '@item.InkoopPrijs', '@item.Sorteervolgorde', event)">
+                                                        Select
+                                                    </button>
+                                                </td>
+                                                <td>@item.Artikelgroep</td>
+                                                <td>@item.Artikelsubgroep</td>
+                                                <td>@item.Artikelnummer</td>
+                                                <td>@item.Omschrijving</td>
+                                                <td>@item.Prijs</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table-container">
+                <table id="orderRulesTable">
+                    <thead>
+                        <tr>
+                            <th>Artikel</th>
+                            <th>Omschrijving</th>
+                            <th>Aantal</th>
+                            <th>Prijs</th>
+                            <th>Totaal</th>
+                            <th>Sorteervolgorde</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.OrderFlagRules.Count; i++)
+                        {
+                            <tr>
+                                <input name="OrderFlagRules[@i].OrderRegelId" type="hidden" value="@Model.OrderFlagRules[i].OrderRegelId" />
+                                <input name="OrderFlagRules[@i].OrderId" type="hidden" value="@Model.OrderFlagRules[i].OrderId" />
+                                <td><input name="OrderFlagRules[@i].Artikelnummer" value="@Model.OrderFlagRules[i].Artikelnummer" readonly /></td>
+                                <td><input name="OrderFlagRules[@i].Omschrijving" value="@Model.OrderFlagRules[i].Omschrijving" readonly /></td>
+                                <td><input name="OrderFlagRules[@i].Hoeveelheid" value="@Model.OrderFlagRules[i].Hoeveelheid" type="number" class="hoeveelheid" min="1" /></td>
+                                <td><input name="OrderFlagRules[@i].Prijs" value="@Model.OrderFlagRules[i].Prijs" class="prijs euro-input" /></td>
+                                <td><input class="totaal" type="text" readonly /></td>
+                                <td><input name="OrderFlagRules[@i].Sorteervolgorde" value="@Model.OrderFlagRules[i].Sorteervolgorde" /></td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bottom-actions form-grid">
+                <div class="form-row">
+                    <label for="hoeveelheid">Naam:</label>
+                    <input asp-for="CurrentClient.Naam" type="text" readonly>
+                    <label for="nettoTotaal">Netto totaal:</label>
+                    <div class="input-group">
+                        <input type="text" id="nettoTotaal">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="afbeelding" class="right-label">Aflever adres:</label>
+                    <input asp-for="CurrentClient.Adres" readonly>
+                    <label for="btwPercent">B.T.W. %</label>
+                    <div class="input-group">
+                        <input asp-for="BTW" type="number" id="btwPercentage" min="0" max="100" readonly/>
+                    </div>
+                    <label for="btwBedrag">B.T.W. bedrag:</label>
+                    <div class="input-group">
+                        <input type="text" id="btwBedrag">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="afbeelding" class="right-label">T.a.v:</label>
+                    <input asp-for="CurrentClient.Contactpersoon" readonly>
+                    <label for="totaal">Totaal:</label>
+                    <div class="input-group">
+                        <input type="text" id="totaal">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="afbeelding" class="right-label">Postcode/woonplaats:</label>
+                    <input asp-for="CurrentClient.Postcode" readonly>
+                    <input asp-for="CurrentClient.Woonplaats" readonly>
+                </div>
+                <div class="form-row">
+                    <label for="afbeelding" class="right-label">Telefoonnummer:</label>
+                    <input asp-for="CurrentClient.Telefoon" readonly>
+                </div>
+            </div>
+
+                <div class="flags">
+                <button type="button" class="flag-button active" onclick="openOrderDocuments(@Model.OrderFlag.OrderId)">Order afdrukken</button>
+                <button type="button" class="flag-button active">Orderbevestiging e-mailen</button>
+                <label for="voorb">Geprint:</label>
+                <select asp-for="OrderFlag.Geprint">
+                    <option>Ja</option>
+                    <option>Nee</option>
+                </select>
+                    <button type="button" class="flag-button active">Vlaggenhuis F</button>
+                    <label for="voorb">Factuur:</label>
+                    <select asp-for="OrderFlag.Gefactureerd">
+                        <option>Ja</option>
+                        <option>Nee</option>
+                    </select>
+                 <div class="form-row">
+                <button type="button" class="flag-button active">Naar kalender</button>
+                </div>
+            </div>
+            <button type="submit" name="type" value="Submit" class="flag-button active">Save</button>
+
+            </div>
+    </form>
+
+    <script src="~/js/OrderFlag.js?v=4"></script>
+</body>

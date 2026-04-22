@@ -1,0 +1,69 @@
+﻿@page "{id:int}"
+@model OrderPrintPreviewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <title>Werkopdracht / Pakbon</title>
+    <link rel="stylesheet" href="~/css/orderprintpreview.css?v=2" />
+</head>
+<body onload="window.print()">
+    <div class="print-container">
+        <img src="~/img/header.png" alt="Header" class="header-image" />
+
+        <h2>Werkopdracht / Pakbon</h2>
+
+        <div class="details-block">
+            <p><strong>Orderdatum:</strong> @Model.OrderFlag.Orderdatum?.ToString("dd-MM-yyyy")</p>
+            <p><strong>Geplande leverdatum:</strong> @Model.OrderFlag.Afleverdatum.ToString("dd-MM-yyyy")</p>
+        </div>
+
+        <div class="address-block">
+            <p><strong>Afleveradres:</strong></p>
+            <p>Duikvereniging Ad Fundum!</p>
+            <p>De Theems 54<br />5142-SN Drunen</p>
+            <p>T.a.v.: Hans</p>
+            <p>Tel: 06 /22488905</p>
+        </div>
+
+        <div class="order-meta">
+            <p><strong>Factuurnummer:</strong> —</p>
+            <p><strong>Referentie:</strong> Duikvlag 2025</p>
+            <p><strong>Notitie:</strong> Noties over de kleuren van de vlag</p>
+        </div>
+
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Omschrijving</th>
+                    <th>Aantal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderFlagRules)
+                {
+                    <tr>
+                        <td>@item.Omschrijving</td>
+                        <td>@item.Hoeveelheid</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="signature-section">
+            <p><strong>Volledig afgewerkt d.d.:</strong> ______________________</p>
+            <p><strong>Handtekening voor akkoord levering:</strong> ______________________</p>
+            <p>(Naam en Handtekening svp)</p>
+        </div>
+
+        <footer class="footer-contact">
+            <p><strong>Nieuwenhuizen Vlaggen & Masten</strong></p>
+            <p>v.d. Duinstraat 82 - Sprang-Capelle Tel: +31 416-272498</p>
+            <p><a href="http://www.nieuwenhuizen.nl">www.nieuwenhuizen.nl</a> - info@nieuwenhuizen.nl - kvk: 18088894</p>
+        </footer>
+    </div>
+</body>
+</html>
