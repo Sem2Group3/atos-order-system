@@ -1,3 +1,4 @@
+// home controller
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Web.Models;

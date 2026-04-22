@@ -1,4 +1,5 @@
-﻿using Core.Security;
+﻿// dashboard controller
+using Core.Security;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
