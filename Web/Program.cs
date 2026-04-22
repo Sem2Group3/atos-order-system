@@ -53,6 +53,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 var app = builder.Build();
 
 await app.Services.SeedRolesAndPermissionsAsync();
+await app.Services.SeedDefaultUserAsync("Root", "User", "root@local", "Password!", Roles.Admin);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
