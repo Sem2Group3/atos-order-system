@@ -23,14 +23,11 @@
     </div>
 
     <div class="form-check mb-3 d-flex align-items-center gap-2">
-
-        <input asp-for="RememberMe" class="form-check-input" />
-
+        <input asp-for="RememberMe" role="button" class="form-check-input" />
         <label asp-for="RememberMe"
                class="form-check-label mb-0">
             Remember me
         </label>
-
         <i class="bi bi-question-circle text-muted"
            role="button"
            tabindex="0"
@@ -38,7 +35,6 @@
            data-bs-placement="right"
            title="Keeps you signed in on this device for a longer period of time">
         </i>
-
     </div>
     
     <button type="submit" id="submit-button" class="btn btn-primary">Login</button>

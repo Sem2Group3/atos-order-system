@@ -2,14 +2,7 @@
 
 public static class Roles
 {
-    public const string Admin = "Admin";
-    public const string User = "User";
-    public const string Manager = "Manager";
-
-    public static readonly List<string> All =
-    [
-        Admin,
-        User,
-        Manager
-    ];
+    public const string Admin = "admin";
+    public const string Accountant = "accountant";
+    public const string Viewer = "viewer";
 }

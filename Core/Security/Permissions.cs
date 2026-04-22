@@ -2,16 +2,26 @@
 
 public static class Permissions
 {
-    public const string InvoiceCreate = "invoice.create";
-    public const string InvoiceUpdate = "invoice.update";
-    public const string InvoiceDelete = "invoice.delete";
-    public const string InvoiceView   = "invoice.view";
+    public static class Invoice
+    {
+        public const string Create = "invoice.create";
+        public const string Update = "invoice.update";
+        public const string Delete = "invoice.delete";
+        public const string View = "invoice.view";
+    }
 
-    public static readonly List<string> All = 
+    public static class Dashboard
+    {
+        public const string Read = "dashboard.read";
+    }
+
+    public static readonly IReadOnlyList<string> All =
     [
-        InvoiceCreate,
-        InvoiceUpdate,
-        InvoiceDelete,
-        InvoiceView
+        Invoice.Create,
+        Invoice.Update,
+        Invoice.Delete,
+        Invoice.View,
+        
+        Dashboard.Read
     ];
 }

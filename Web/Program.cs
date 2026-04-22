@@ -1,7 +1,10 @@
 using Core.Auth;
+using Core.Security;
 using Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Web.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,48 +20,39 @@ builder.Services
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
+builder.Services.AddAuthorization(options =>
+{
+    foreach (var permission in Permissions.All)
+    {
+        options.AddPolicy(permission, policy =>
+            policy.Requirements.Add(new PermissionRequirement(permission)));
+    }
+});
+
 builder.Services.AddControllersWithViews();
 
-if (builder.Environment.IsDevelopment())
-{
-    builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
     
-    builder.Services.Configure<IdentityOptions>(options =>
-    {
-        options.SignIn.RequireConfirmedEmail = false;
-        options.SignIn.RequireConfirmedPhoneNumber = false;
-        options.SignIn.RequireConfirmedAccount = false;
-
-        options.User.RequireUniqueEmail = true;
-
-        options.Password.RequireDigit = false;
-        options.Password.RequireLowercase = false;
-        options.Password.RequireNonAlphanumeric = false;
-        options.Password.RequireUppercase = false;
-        options.Password.RequiredLength = 8;
-        options.Password.RequiredUniqueChars = 0;
-    });
-}
-else
+builder.Services.Configure<IdentityOptions>(options =>
 {
-    builder.Services.Configure<IdentityOptions>(options =>
-    {
-        options.SignIn.RequireConfirmedEmail = true;
-        options.SignIn.RequireConfirmedPhoneNumber = false;
-        options.SignIn.RequireConfirmedAccount = true;
+    options.SignIn.RequireConfirmedEmail = false;
+    options.SignIn.RequireConfirmedPhoneNumber = false;
+    options.SignIn.RequireConfirmedAccount = false;
 
-        options.User.RequireUniqueEmail = true;
+    options.User.RequireUniqueEmail = true;
 
-        options.Password.RequireDigit = true;
-        options.Password.RequireLowercase = true;
-        options.Password.RequireNonAlphanumeric = true;
-        options.Password.RequireUppercase = true;
-        options.Password.RequiredLength = 8;
-        options.Password.RequiredUniqueChars = 1;
-    });
-}
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequiredLength = 8;
+    options.Password.RequiredUniqueChars = 0;
+});
 
 var app = builder.Build();
+
+await app.Services.SeedRolesAndPermissionsAsync();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

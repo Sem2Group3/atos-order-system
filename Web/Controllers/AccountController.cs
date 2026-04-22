@@ -67,6 +67,12 @@ public class AccountController(IAuthService authService) : Controller
 
         return View(model);
     }
+    
+    [HttpGet]
+    public IActionResult AccessDenied()
+    {
+        return View();
+    }
 
     [HttpPost]
     [ValidateAntiForgeryToken]

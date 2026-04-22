@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Core.Security;
 
 namespace Core.Auth;
 
@@ -21,7 +22,12 @@ public class AuthService(
             Email = email,
         };
         
-        return await userManager.CreateAsync(user, password);;
+        var createResult = await userManager.CreateAsync(user, password);
+        if (!createResult.Succeeded)
+            return createResult;
+
+        var addToRoleResult = await userManager.AddToRoleAsync(user, Roles.Viewer);
+        return addToRoleResult.Succeeded ? createResult : addToRoleResult;
     }
 
     public async Task LogoutAsync()
