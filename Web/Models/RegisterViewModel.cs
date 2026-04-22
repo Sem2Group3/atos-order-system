@@ -5,6 +5,14 @@ namespace Web.Models;
 public class RegisterViewModel
 {
     [Required]
+    [Display(Name = "First Name")]
+    public string FirstName { get; init; } = string.Empty;
+
+    [Required]
+    [Display(Name = "Last Name")]
+    public string LastName { get; init; } = string.Empty;
+
+    [Required]
     [EmailAddress]
     public string Email { get; init; } = string.Empty;
     

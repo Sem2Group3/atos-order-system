@@ -12,7 +12,7 @@ public static class Permissions
 
     public static class Dashboard
     {
-        public const string Read = "dashboard.read";
+        public const string View = "dashboard.View";
     }
 
     public static readonly IReadOnlyList<string> All =
@@ -22,6 +22,6 @@ public static class Permissions
         Invoice.Delete,
         Invoice.View,
         
-        Dashboard.Read
+        Dashboard.View
     ];
 }

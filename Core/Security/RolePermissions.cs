@@ -11,12 +11,12 @@ public static class RolePermissions
             Permissions.Invoice.Create,
             Permissions.Invoice.Update,
             Permissions.Invoice.View,
-            Permissions.Dashboard.Read
+            Permissions.Dashboard.View
         ],
         [Roles.Viewer] =
         [
             Permissions.Invoice.View,
-            Permissions.Dashboard.Read
+            Permissions.Dashboard.View
         ]
     };
 }
