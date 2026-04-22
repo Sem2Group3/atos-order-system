@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using Core.Auth;
 using Microsoft.AspNetCore.Identity;
 using Core.Security;
 
@@ -73,6 +74,23 @@ public static class IdentitySeedExtensions
             var errorText = string.Join(", ", result.Errors.Select(e => e.Description));
             throw new InvalidOperationException(
                 $"Failed to remove permission '{staleClaim.Value}' from role '{role.Name}': {errorText}");
+        }
+    }
+
+    public static async Task SeedDefaultUserAsync(this IServiceProvider services, string firstName, string lastName, string email, string password, string roleName)
+    {
+        using var scope = services.CreateScope();
+        var authService = scope.ServiceProvider.GetRequiredService<IAuthService>();
+        
+        var existingUser = await authService.FindUserByEmailAsync(email);
+        if (existingUser != null)
+            return;
+
+        var result = await authService.CreateUserAsync(firstName, lastName, email, password, roleName);
+        if (!result.Succeeded)
+        {
+            var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+            throw new InvalidOperationException($"Failed to create default user: {errors}");
         }
     }
 }

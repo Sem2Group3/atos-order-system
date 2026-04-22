@@ -17,6 +17,16 @@ public class AuthService(
 
     public async Task<IdentityResult> RegisterAsync(string firstName, string lastName, string email, string password)
     {
+        return await CreateUserAsync(firstName, lastName, email, password, Roles.Viewer);
+    }
+
+    public async Task LogoutAsync()
+    {
+        await signInManager.SignOutAsync();
+    }
+    
+    public async Task<IdentityResult> CreateUserAsync(string firstName, string lastName, string email, string password, string roleName)
+    {
         var user = new ApplicationUser
         {
             FirstName = firstName,
@@ -29,12 +39,12 @@ public class AuthService(
         if (!createResult.Succeeded)
             return createResult;
 
-        var addToRoleResult = await userManager.AddToRoleAsync(user, Roles.Viewer);
+        var addToRoleResult = await userManager.AddToRoleAsync(user, roleName);
         return addToRoleResult.Succeeded ? createResult : addToRoleResult;
     }
 
-    public async Task LogoutAsync()
+    public async Task<ApplicationUser?> FindUserByEmailAsync(string email)
     {
-        await signInManager.SignOutAsync();
+        return await userManager.FindByEmailAsync(email);
     }
 }
