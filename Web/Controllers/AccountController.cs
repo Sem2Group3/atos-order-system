@@ -1,4 +1,5 @@
-﻿using Core.Auth;
+﻿// account controller
+using Core.Auth;
 using Microsoft.AspNetCore.Mvc;
 using Web.Models;
 
@@ -27,13 +28,16 @@ public class AccountController(IAuthService authService) : Controller
             return RedirectToAction("Index", "Dashboard");
         
         if (result.IsLockedOut)
-            ModelState.AddModelError(string.Empty, "Your account is locked out.");
+            ModelState.AddModelError(string.Empty, "Uw account is geblokkeerd.");
+
         else if (result.IsNotAllowed)
-            ModelState.AddModelError(string.Empty, "You are not allowed to log in.");
+            ModelState.AddModelError(string.Empty, "U heeft geen toestemming om in te loggen.");
+
         else if (result.RequiresTwoFactor)
-            ModelState.AddModelError(string.Empty, "Two-factor authentication is required.");
+            ModelState.AddModelError(string.Empty, "Tweestapsverificatie is verplicht.");
+
         else
-             ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            ModelState.AddModelError(string.Empty, "Ongeldige inloggegevens.");
 
         return View(model);
     }
