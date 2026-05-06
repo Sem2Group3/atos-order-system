@@ -24,7 +24,7 @@ public class AuthService(
     {
         await signInManager.SignOutAsync();
     }
-    
+
     public async Task<IdentityResult> CreateUserAsync(string firstName, string lastName, string email, string password, string roleName)
     {
         var user = new ApplicationUser
@@ -34,7 +34,7 @@ public class AuthService(
             UserName = email,
             Email = email,
         };
-        
+
         var createResult = await userManager.CreateAsync(user, password);
         if (!createResult.Succeeded)
             return createResult;

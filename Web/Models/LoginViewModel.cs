@@ -10,8 +10,9 @@ public class LoginViewModel
     
     [Required]
     [DataType(DataType.Password)]
+    [Display(Name = "Wachtwoord")]
     public string Password { get; init; } = string.Empty;
 
-    [Display(Name = "Remember Me")]
+    [Display(Name = "Onthoud mij")]
     public bool RememberMe { get; init; }
 }

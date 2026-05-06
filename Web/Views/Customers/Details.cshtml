@@ -1,0 +1,144 @@
+﻿@model Web.Models.CustomerViewModel
+
+@{
+    ViewData["Title"] = "Klantgegevens";
+    var formattedOutstandingAmount = Model.OutstandingAmount.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("nl-NL"));
+}
+
+<h1>Klantgegevens</h1>
+
+<div class="row">
+    <div class="col-lg-10">
+        <div class="row">
+            <!-- Left Column: Customer Information -->
+            <div class="col-lg-6">
+                <h4>Klantinformatie</h4>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <strong>Volledige naam:</strong>
+                            <p>@Model.FullName</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Straat:</strong>
+                            <p>@Model.Street</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>Huisnummer:</strong>
+                                    <p>@Model.HouseNumber</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <strong>Postcode:</strong>
+                                    <p>@Model.PostalCode</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Plaats:</strong>
+                            <p>@Model.City</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Telefoonnummer:</strong>
+                            <p>@Model.PhoneNumber</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>E-mail:</strong>
+                            <p><a href="mailto:@Model.Email">@Model.Email</a></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Verzending gericht naar:</strong>
+                            <p>@Model.MailAddressedTo</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Opmerkingen:</strong>
+                            <p>@Model.Notes</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Openstaand bedrag:</strong>
+                            <p>@formattedOutstandingAmount</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Invoice Information -->
+            <div class="col-lg-6">
+                <h4>Factuurgegevens</h4>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <strong>Naam:</strong>
+                            <p>@Model.InvoiceInformation.Name</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Straat:</strong>
+                            <p>@Model.InvoiceInformation.Street</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <strong>Huisnummer:</strong>
+                                    <p>@Model.InvoiceInformation.HouseNumber</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <strong>Postcode:</strong>
+                                    <p>@Model.InvoiceInformation.PostalCode</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <strong>Plaats:</strong>
+                                    <p>@Model.InvoiceInformation.City</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>Factuurbetrekking:</strong>
+                            <p>@Model.InvoiceInformation.InvoiceRegarding</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong>BTW-nummer:</strong>
+                            <p>@Model.InvoiceInformation.VatNumber</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            @if (User.HasClaim("permission", "customer.update"))
+            {
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                    <i class="bi bi-pencil"></i> Bewerken
+                </a>
+            }
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Terug naar overzicht
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -11,11 +11,15 @@ public static class RolePermissions
             Permissions.Invoice.Create,
             Permissions.Invoice.Update,
             Permissions.Invoice.View,
+            Permissions.Customer.Create,
+            Permissions.Customer.Update,
+            Permissions.Customer.View,
             Permissions.Dashboard.View
         ],
         [Roles.Viewer] =
         [
             Permissions.Invoice.View,
+            Permissions.Customer.View,
             Permissions.Dashboard.View
         ]
     };

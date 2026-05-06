@@ -1,10 +1,10 @@
 ﻿@model RegisterViewModel
 
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Registreren";
 }
 
-<h2>Register</h2>
+<h2>Registreren</h2>
 
 <form asp-action="Register" method="post" class="mt-3">
     @Html.AntiForgeryToken()
@@ -40,13 +40,13 @@
         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
     </div>
     
-    <button type="submit" id="submit-button" class="btn btn-primary">Register</button>
+    <button type="submit" id="submit-button" class="btn btn-primary">Registreren</button>
 </form>
 
 <div class="mt-3">
     <p>
-        Already have an account?
-        <a asp-controller="Account" asp-action="Login">Login here</a>
+        Hebt u al een account?
+        <a asp-controller="Account" asp-action="Login">Inloggen hier</a>
     </p>
 </div>
 

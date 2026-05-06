@@ -1,20 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Access Denied";
+    ViewData["Title"] = "Toegang geweigerd";
 }
 
 <div class="container mt-5 text-center">
-    <h1 class="text-danger">Access Denied</h1>
+    <h1 class="text-danger">Toegang geweigerd</h1>
 
     <p class="mt-3">
-        You do not have permission to access this page.
+        U hebt geen toestemming voor toegang tot deze pagina.
     </p>
 
     @if (Context.Request.Query.ContainsKey("ReturnUrl"))
     {
         <p class="text-muted">
-            Attempted path: <code>@Context.Request.Query["ReturnUrl"]</code>
+            Poging tot pad: <code>@Context.Request.Query["ReturnUrl"]</code>
         </p>
     }
     
-    <a class="btn btn-primary mt-3" asp-controller="Home" asp-action="Index">Go to home</a>
+    <a class="btn btn-primary mt-3" asp-controller="Home" asp-action="Index">Terug naar startpagina</a>
 </div>
