@@ -10,14 +10,6 @@ public static class Permissions
         public const string View = "invoice.view";
     }
 
-    public static class Customer
-    {
-        public const string Create = "customer.create";
-        public const string Update = "customer.update";
-        public const string Delete = "customer.delete";
-        public const string View = "customer.view";
-    }
-
     public static class Dashboard
     {
         public const string View = "dashboard.View";
@@ -29,11 +21,6 @@ public static class Permissions
         Invoice.Update,
         Invoice.Delete,
         Invoice.View,
-        
-        Customer.Create,
-        Customer.Update,
-        Customer.Delete,
-        Customer.View,
         
         Dashboard.View
     ];
