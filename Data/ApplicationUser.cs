@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace Data;
 
 public class ApplicationUser : IdentityUser
 {
-	public string FirstName { get; set; } = string.Empty;
-	public string LastName { get; set; } = string.Empty;
+	[MaxLength(50)]
+	public required string FirstName { get; set; }
+	
+	[MaxLength(50)]
+	public required string LastName { get; set; }
 }
 

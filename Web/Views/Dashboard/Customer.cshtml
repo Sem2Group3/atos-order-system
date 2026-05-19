@@ -1,0 +1,329 @@
+﻿@model Web.Models.CustomerViewModel;
+
+@{
+    ViewData["Title"] = "Klant";
+}
+
+<div class="container-fluid py-2">
+    <div class="top-toolbar d-flex align-items-center gap-2 mb-3 flex-wrap">
+
+        <div class="d-flex align-items-center gap-2">
+            <label class="toolbar-label mb-0">
+                @Html.DisplayNameFor(m => m.CustomerId)
+            </label>
+
+            <input type="text"
+                   class="form-control form-control-sm"
+                   value="@Model.CustomerId"
+                   disabled/>
+        </div>
+
+        <button class="btn btn-outline-secondary btn-sm toolbar-btn">
+            Wijzigen
+        </button>
+
+        <button class="btn btn-outline-secondary btn-sm toolbar-btn">
+            Nieuw
+        </button>
+
+        <button class="btn btn-outline-primary btn-sm toolbar-btn">
+            Zoeken
+        </button>
+
+        <div class="flex-grow-1">
+            <input type="text"
+                   class="form-control form-control-sm w-100"
+                   value="@Model.SearchText"
+                   placeholder="Zoeken..."/>
+        </div>
+
+        <button class="btn btn-outline-secondary btn-sm toolbar-btn">
+            Adreslabel
+        </button>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-xl-8">
+            <div class="modern-panel h-100">
+                <div class="row g-2 align-items-center">
+                    <div class="col-12 col-md-2">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.Name)</label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <input class="form-control form-control-sm"
+                               value="@Model.Name"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.OutstandingAmount)</label>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <input class="form-control form-control-sm"
+                               value="@Model.OutstandingAmount"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.Address)</label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <input class="form-control form-control-sm"
+                               value="@Model.Address"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.PhoneNumber)</label>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <input class="form-control form-control-sm"
+                               value="@Model.PhoneNumber"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.PostalCode)</label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <input class="form-control form-control-sm"
+                               value="@Model.PostalCode"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.MobileNumber)</label>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <input class="form-control form-control-sm"
+                               value="@Model.MobileNumber"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.City)</label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <input class="form-control form-control-sm"
+                               value="@Model.City"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.EmailAddress)</label>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <input class="form-control form-control-sm"
+                               value="@Model.EmailAddress"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <input class="form-control form-control-sm" disabled/>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <button class="btn btn-outline-secondary btn-sm w-100 toolbar-btn">
+                            Zoek Artikel
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.AttentionOf)</label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <input class="form-control form-control-sm"
+                               value="@Model.AttentionOf"
+                               disabled/>
+                    </div>
+
+                </div>
+
+                <div class="mt-3">
+
+                    <label class="field-label mb-1">@Html.DisplayNameFor(m => m.Notes)</label>
+
+                    <textarea class="form-control notes-area"
+                              disabled>@Model.Notes</textarea>
+
+                </div>
+
+                <div class="mt-3 blocked-section">
+                    <label class="field-label mb-1">@Html.DisplayNameFor(m => m.IsBlocked)</label>
+
+                    <select class="form-select form-select-sm blocked-select" disabled>
+                        <option value="false" selected="@(!Model.IsBlocked)">Nee</option>
+                        <option value="true" selected="@(Model.IsBlocked)">Ja</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4">
+            <div class="modern-panel invoice-panel h-100">
+                <div class="invoice-title">
+                    Factuur gegevens
+                </div>
+
+                <div class="row g-2 align-items-center">
+
+                    <div class="col-12 col-sm-4">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.Name)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.Name"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.Address)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.Address"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.PostalCode)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.PostalCode"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.City)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.City"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label
+                            class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.InvoiceAttentionOf)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.InvoiceAttentionOf"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.DigitalInvoice)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.DigitalInvoice"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.VatNumber)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <input class="form-control form-control-sm"
+                               value="@Model.InvoiceDetails.VatNumber"
+                               disabled/>
+                    </div>
+
+                    <div class="col-12 col-sm-4 align-self-start">
+                        <label class="field-label">@Html.DisplayNameFor(m => m.InvoiceDetails.ContactNotes)</label>
+                    </div>
+
+                    <div class="col-12 col-sm-8">
+                        <textarea class="form-control contact-notes"
+                                  disabled>@Model.InvoiceDetails.ContactNotes</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .modern-panel {
+        border: 1px solid var(--bs-border-color);
+        padding: 1rem;
+    }
+
+    .invoice-panel {
+        height: 100%;
+    }
+
+    .top-toolbar {
+        border: 1px solid var(--bs-border-color);
+        padding: .75rem;
+    }
+
+    .toolbar-label {
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .toolbar-btn {
+        min-width: 7rem;
+    }
+
+    .field-label {
+        font-weight: 500;
+        color: var(--bs-gray-800);
+        margin-bottom: 0;
+    }
+
+    .form-control,
+    .form-select {
+        border-color: var(--bs-border-color);
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: var(--bs-primary);
+        box-shadow: 0 0 0 .1rem rgba(var(--bs-primary-rgb), .15);
+    }
+
+    .notes-area {
+        min-height: 12rem;
+        resize: none;
+    }
+
+    .contact-notes {
+        min-height: 8rem;
+        resize: none;
+    }
+
+    .invoice-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--bs-gray-900);
+    }
+
+    .blocked-section {
+        max-width: 12rem;
+    }
+
+    .blocked-select {
+        max-width: 8rem;
+    }
+</style>

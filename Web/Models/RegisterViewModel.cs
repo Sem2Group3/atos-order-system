@@ -6,24 +6,26 @@ public class RegisterViewModel
 {
     [Required]
     [Display(Name = "Voornaam")]
-    public string FirstName { get; init; } = string.Empty;
-
+    [MaxLength(50)]
+    public string FirstName { get; set; } = string.Empty;
+    
     [Required]
     [Display(Name = "Achternaam")]
-    public string LastName { get; init; } = string.Empty;
+    [MaxLength(50)]
+    public string LastName { get; set; } = string.Empty;
 
     [Required]
     [EmailAddress]
-    public string Email { get; init; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
     
     [Required]
     [DataType(DataType.Password)]
     [Display(Name = "Wachtwoord")]
-    public string Password { get; init; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
 
     [Required]
     [DataType(DataType.Password)]
     [Display(Name = "Wachtwoord bevestigen")]
     [Compare("Password", ErrorMessage = "De wachtwoorden komen niet overeen.")]
-    public string ConfirmPassword { get; init; } = string.Empty;
+    public string ConfirmPassword { get; set; } = string.Empty;
 }
