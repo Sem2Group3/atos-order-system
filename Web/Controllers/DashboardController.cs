@@ -21,7 +21,6 @@ public class DashboardController : Controller
         var customer = new CustomerViewModel
         {
             CustomerId = 10245,
-            SearchText = "janssen",
             Name = "Janssen Bouw B.V.",
             OutstandingAmount = 1845.75m,
             Address = "Marktstraat 12",

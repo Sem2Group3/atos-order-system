@@ -7,8 +7,6 @@ public class CustomerViewModel
     [Display(Name = "Klant nummer")]
     public int CustomerId { get; set; } = 0;
 
-    public string SearchText { get; set; } = string.Empty;
-
     [Display(Name = "Naam")]
     public string Name { get; set; } = string.Empty;
 
